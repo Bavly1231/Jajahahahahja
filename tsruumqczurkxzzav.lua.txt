@@ -1,0 +1,3267 @@
+-- █▀▀ ▄▀█ █░░ ▄▀█ █▀▀ ▀█▀ █ █▀▀   █▀▄ █░█ █▀▄▀█ █▀█ █▀▀ █▀█
+-- █▄█ █▀█ █▄▄ █▀█ █▄▄ ░█░ █ █▄▄   █▄▀ █▄█ █░▀░█ █▀▀ ██▄ █▀▄
+-- Version v1.7.5
+-- https://discord.gg/qy2neXET6W
+local env = _G
+local fenv = getfenv()
+local Players = game:GetService('Players')
+local MarketplaceService = game:GetService('MarketplaceService')
+local v5 = MarketplaceService.UserOwnsGamePassAsync(MarketplaceService, game.Players.LocalPlayer.UserId, 906402111)
+local Players = game:GetService('Players')
+local TweenService = game:GetService('TweenService')
+local UserInputService = game:GetService('UserInputService')
+local StarterGui = game:GetService('StarterGui')
+local RunService = game:GetService('RunService')
+local ProximityPromptService = game:GetService('ProximityPromptService')
+-- Not found in game: ProximityPromptService
+local TextChatService = game:GetService('TextChatService')
+-- Not found in game: TextChatService
+local ReplicatedStorage = game:GetService('ReplicatedStorage')
+local v16 = game.Players.LocalPlayer.PlayerGui:FindFirstChild("ChilpSemiTP")
+game.Players.LocalPlayer.PlayerGui.ChilpSemiTP:Destroy()
+local screengui_427 = Instance.new("ScreenGui")
+
+screengui_427.Name = "ChilpSemiTP"
+screengui_427.ResetOnSpawn = false
+screengui_427.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+local frame_685 = Instance.new("Frame")
+
+frame_685.Size = UDim2.new(0, 300, 0, 330)
+frame_685.Position = UDim2.new(1, -315, 0.5, -164)
+frame_685.BackgroundColor3 = Color3.fromRGB(10, 8, 18)
+frame_685.BorderSizePixel = 0
+frame_685.ClipsDescendants = true
+local uicorner_471 = Instance.new("UICorner")
+
+uicorner_471.CornerRadius = UDim.new(0, 20)
+local imagelabel_514 = Instance.new("ImageLabel")
+
+imagelabel_514.BackgroundTransparency = 1
+imagelabel_514.Position = UDim2.new(0, -25, 0, -25)
+imagelabel_514.Size = UDim2.new(1, 50, 1, 50)
+imagelabel_514.Image = "rbxassetid://5028822351"
+imagelabel_514.ImageColor3 = Color3.fromRGB(160, 80, 255)
+imagelabel_514.ImageTransparency = 0.4
+imagelabel_514.ZIndex = 0
+local uistroke_411 = Instance.new("UIStroke")
+
+uistroke_411.Thickness = 2.5
+uistroke_411.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+local uigradient_219 = Instance.new("UIGradient")
+
+uigradient_219.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(160, 80, 255)),
+    ColorSequenceKeypoint.new(0.5, Color3.fromRGB(220, 160, 255)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(160, 80, 255))
+})
+uigradient_219.Transparency = NumberSequence.new({
+    NumberSequenceKeypoint.new(0, 0),
+    NumberSequenceKeypoint.new(0.5, 0),
+    NumberSequenceKeypoint.new(1, 0)
+})
+RunService.RenderStepped:Connect(function(r, I, h, Q)
+    local calc_1 = (uigradient_219.Rotation + "2")
+    local calc_2 = (calc_1 % 360)
+    uigradient_219.Rotation = calc_2
+end)
+local frame_793 = Instance.new("Frame")
+
+frame_793.Size = UDim2.new(1, 0, 1, 0)
+frame_793.BackgroundTransparency = 1
+frame_793.ClipsDescendants = true
+frame_793.ZIndex = 1
+task.spawn(function(r, I, h, Q)
+    task.wait(0.28)
+    local frame_638 = Instance.new("Frame")
+
+    frame_638.Size = UDim2.new(0, 2, 0, 4)
+    frame_638.Position = UDim2.new(0.14, 0, 0, -10)
+    frame_638.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_638.BackgroundTransparency = 0.59
+    frame_638.BorderSizePixel = 0
+    frame_638.ZIndex = 1
+    frame_638.Parent = frame_638
+    local uicorner_208 = Instance.new("UICorner")
+
+    uicorner_208.CornerRadius = UDim.new(1, 0)
+    local v12 = TweenService:Create(TweenService, {}, TweenInfo.new(10, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_638.Position.X.Scale, 0, 1, 10)
+})
+    local v13 = v12:Play()
+    v12.Completed:Connect(function(r, I, h)
+    local v1 = frame_638.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_529 = Instance.new("Frame")
+
+    frame_529.Size = UDim2.new(0, 3, 0, 4)
+    frame_529.Position = UDim2.new(0.1, 0, 0, -10)
+    frame_529.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_529.BackgroundTransparency = 0.53
+    frame_529.BorderSizePixel = 0
+    frame_529.ZIndex = 1
+    frame_529.Parent = frame_529
+    local uicorner_900 = Instance.new("UICorner")
+
+    uicorner_900.CornerRadius = UDim.new(1, 0)
+    local v26 = TweenService:Create(TweenService, {}, TweenInfo.new(8, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_529.Position.X.Scale, 0, 1, 10)
+})
+    local v27 = v26:Play()
+    v26.Completed:Connect(function(r, I, h)
+    local v1 = frame_529.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_528 = Instance.new("Frame")
+
+    frame_528.Size = UDim2.new(0, 2, 0, 5)
+    frame_528.Position = UDim2.new(0.09, 0, 0, -10)
+    frame_528.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_528.BackgroundTransparency = 0.66
+    frame_528.BorderSizePixel = 0
+    frame_528.ZIndex = 1
+    frame_528.Parent = frame_528
+    local uicorner_697 = Instance.new("UICorner")
+
+    uicorner_697.CornerRadius = UDim.new(1, 0)
+    local v40 = TweenService:Create(TweenService, {}, TweenInfo.new(8, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_528.Position.X.Scale, 0, 1, 10)
+})
+    local v41 = v40:Play()
+    v40.Completed:Connect(function(r, I, h)
+    local v1 = frame_528.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_383 = Instance.new("Frame")
+
+    frame_383.Size = UDim2.new(0, 3, 0, 4)
+    frame_383.Position = UDim2.new(0.8, 0, 0, -10)
+    frame_383.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_383.BackgroundTransparency = 0.65
+    frame_383.BorderSizePixel = 0
+    frame_383.ZIndex = 1
+    frame_383.Parent = frame_383
+    local uicorner_464 = Instance.new("UICorner")
+
+    uicorner_464.CornerRadius = UDim.new(1, 0)
+    local v54 = TweenService:Create(TweenService, {}, TweenInfo.new(13, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_383.Position.X.Scale, 0, 1, 10)
+})
+    local v55 = v54:Play()
+    v54.Completed:Connect(function(r, I, h)
+    local v1 = frame_383.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_489 = Instance.new("Frame")
+
+    frame_489.Size = UDim2.new(0, 2, 0, 3)
+    frame_489.Position = UDim2.new(0.02, 0, 0, -10)
+    frame_489.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_489.BackgroundTransparency = 0.56
+    frame_489.BorderSizePixel = 0
+    frame_489.ZIndex = 1
+    frame_489.Parent = frame_489
+    local uicorner_757 = Instance.new("UICorner")
+
+    uicorner_757.CornerRadius = UDim.new(1, 0)
+    local v68 = TweenService:Create(TweenService, {}, TweenInfo.new(9, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_489.Position.X.Scale, 0, 1, 10)
+})
+    local v69 = v68:Play()
+    v68.Completed:Connect(function(r, I, h)
+    local v1 = frame_489.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_94 = Instance.new("Frame")
+
+    frame_94.Size = UDim2.new(0, 5, 0, 2)
+    frame_94.Position = UDim2.new(0.48, 0, 0, -10)
+    frame_94.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_94.BackgroundTransparency = 0.65
+    frame_94.BorderSizePixel = 0
+    frame_94.ZIndex = 1
+    frame_94.Parent = frame_94
+    local uicorner_192 = Instance.new("UICorner")
+
+    uicorner_192.CornerRadius = UDim.new(1, 0)
+    local v82 = TweenService:Create(TweenService, {}, TweenInfo.new(14, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_94.Position.X.Scale, 0, 1, 10)
+})
+    local v83 = v82:Play()
+    v82.Completed:Connect(function(r, I, h)
+    local v1 = frame_94.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_412 = Instance.new("Frame")
+
+    frame_412.Size = UDim2.new(0, 5, 0, 3)
+    frame_412.Position = UDim2.new(0.14, 0, 0, -10)
+    frame_412.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_412.BackgroundTransparency = 0.56
+    frame_412.BorderSizePixel = 0
+    frame_412.ZIndex = 1
+    frame_412.Parent = frame_412
+    local uicorner_341 = Instance.new("UICorner")
+
+    uicorner_341.CornerRadius = UDim.new(1, 0)
+    local v96 = TweenService:Create(TweenService, {}, TweenInfo.new(10, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_412.Position.X.Scale, 0, 1, 10)
+})
+    local v97 = v96:Play()
+    v96.Completed:Connect(function(r, I, h)
+    local v1 = frame_412.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_826 = Instance.new("Frame")
+
+    frame_826.Size = UDim2.new(0, 5, 0, 4)
+    frame_826.Position = UDim2.new(0.53, 0, 0, -10)
+    frame_826.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_826.BackgroundTransparency = 0.55
+    frame_826.BorderSizePixel = 0
+    frame_826.ZIndex = 1
+    frame_826.Parent = frame_826
+    local uicorner_281 = Instance.new("UICorner")
+
+    uicorner_281.CornerRadius = UDim.new(1, 0)
+    local v110 = TweenService:Create(TweenService, {}, TweenInfo.new(14, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_826.Position.X.Scale, 0, 1, 10)
+})
+    local v111 = v110:Play()
+    v110.Completed:Connect(function(r, I, h)
+    local v1 = frame_826.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_520 = Instance.new("Frame")
+
+    frame_520.Size = UDim2.new(0, 3, 0, 5)
+    frame_520.Position = UDim2.new(0.97, 0, 0, -10)
+    frame_520.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_520.BackgroundTransparency = 0.44
+    frame_520.BorderSizePixel = 0
+    frame_520.ZIndex = 1
+    frame_520.Parent = frame_520
+    local uicorner_115 = Instance.new("UICorner")
+
+    uicorner_115.CornerRadius = UDim.new(1, 0)
+    local v124 = TweenService:Create(TweenService, {}, TweenInfo.new(15, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_520.Position.X.Scale, 0, 1, 10)
+})
+    local v125 = v124:Play()
+    v124.Completed:Connect(function(r, I, h)
+    local v1 = frame_520.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_918 = Instance.new("Frame")
+
+    frame_918.Size = UDim2.new(0, 2, 0, 4)
+    frame_918.Position = UDim2.new(0.62, 0, 0, -10)
+    frame_918.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_918.BackgroundTransparency = 0.47
+    frame_918.BorderSizePixel = 0
+    frame_918.ZIndex = 1
+    frame_918.Parent = frame_918
+    local uicorner_551 = Instance.new("UICorner")
+
+    uicorner_551.CornerRadius = UDim.new(1, 0)
+    local v138 = TweenService:Create(TweenService, {}, TweenInfo.new(14, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_918.Position.X.Scale, 0, 1, 10)
+})
+    local v139 = v138:Play()
+    v138.Completed:Connect(function(r, I, h)
+    local v1 = frame_918.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_305 = Instance.new("Frame")
+
+    frame_305.Size = UDim2.new(0, 2, 0, 5)
+    frame_305.Position = UDim2.new(0.76, 0, 0, -10)
+    frame_305.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_305.BackgroundTransparency = 0.58
+    frame_305.BorderSizePixel = 0
+    frame_305.ZIndex = 1
+    frame_305.Parent = frame_305
+    local uicorner_68 = Instance.new("UICorner")
+
+    uicorner_68.CornerRadius = UDim.new(1, 0)
+    local v152 = TweenService:Create(TweenService, {}, TweenInfo.new(12, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_305.Position.X.Scale, 0, 1, 10)
+})
+    local v153 = v152:Play()
+    v152.Completed:Connect(function(r, I, h)
+    local v1 = frame_305.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_37 = Instance.new("Frame")
+
+    frame_37.Size = UDim2.new(0, 2, 0, 5)
+    frame_37.Position = UDim2.new(0.47, 0, 0, -10)
+    frame_37.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_37.BackgroundTransparency = 0.58
+    frame_37.BorderSizePixel = 0
+    frame_37.ZIndex = 1
+    frame_37.Parent = frame_37
+    local uicorner_751 = Instance.new("UICorner")
+
+    uicorner_751.CornerRadius = UDim.new(1, 0)
+    local v166 = TweenService:Create(TweenService, {}, TweenInfo.new(11, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_37.Position.X.Scale, 0, 1, 10)
+})
+    local v167 = v166:Play()
+    v166.Completed:Connect(function(r, I, h)
+    local v1 = frame_37.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_110 = Instance.new("Frame")
+
+    frame_110.Size = UDim2.new(0, 3, 0, 5)
+    frame_110.Position = UDim2.new(0.22, 0, 0, -10)
+    frame_110.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_110.BackgroundTransparency = 0.56
+    frame_110.BorderSizePixel = 0
+    frame_110.ZIndex = 1
+    frame_110.Parent = frame_110
+    local uicorner_931 = Instance.new("UICorner")
+
+    uicorner_931.CornerRadius = UDim.new(1, 0)
+    local v180 = TweenService:Create(TweenService, {}, TweenInfo.new(11, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_110.Position.X.Scale, 0, 1, 10)
+})
+    local v181 = v180:Play()
+    v180.Completed:Connect(function(r, I, h)
+    local v1 = frame_110.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_956 = Instance.new("Frame")
+
+    frame_956.Size = UDim2.new(0, 2, 0, 5)
+    frame_956.Position = UDim2.new(0.17, 0, 0, -10)
+    frame_956.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_956.BackgroundTransparency = 0.64
+    frame_956.BorderSizePixel = 0
+    frame_956.ZIndex = 1
+    frame_956.Parent = frame_956
+    local uicorner_847 = Instance.new("UICorner")
+
+    uicorner_847.CornerRadius = UDim.new(1, 0)
+    local v194 = TweenService:Create(TweenService, {}, TweenInfo.new(14, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_956.Position.X.Scale, 0, 1, 10)
+})
+    local v195 = v194:Play()
+    v194.Completed:Connect(function(r, I, h)
+    local v1 = frame_956.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_26 = Instance.new("Frame")
+
+    frame_26.Size = UDim2.new(0, 4, 0, 4)
+    frame_26.Position = UDim2.new(0.55, 0, 0, -10)
+    frame_26.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_26.BackgroundTransparency = 0.62
+    frame_26.BorderSizePixel = 0
+    frame_26.ZIndex = 1
+    frame_26.Parent = frame_26
+    local uicorner_326 = Instance.new("UICorner")
+
+    uicorner_326.CornerRadius = UDim.new(1, 0)
+    local v208 = TweenService:Create(TweenService, {}, TweenInfo.new(15, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_26.Position.X.Scale, 0, 1, 10)
+})
+    local v209 = v208:Play()
+    v208.Completed:Connect(function(r, I, h)
+    local v1 = frame_26.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_546 = Instance.new("Frame")
+
+    frame_546.Size = UDim2.new(0, 5, 0, 2)
+    frame_546.Position = UDim2.new(0.04, 0, 0, -10)
+    frame_546.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_546.BackgroundTransparency = 0.58
+    frame_546.BorderSizePixel = 0
+    frame_546.ZIndex = 1
+    frame_546.Parent = frame_546
+    local uicorner_536 = Instance.new("UICorner")
+
+    uicorner_536.CornerRadius = UDim.new(1, 0)
+    local v222 = TweenService:Create(TweenService, {}, TweenInfo.new(8, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_546.Position.X.Scale, 0, 1, 10)
+})
+    local v223 = v222:Play()
+    v222.Completed:Connect(function(r, I, h)
+    local v1 = frame_546.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_875 = Instance.new("Frame")
+
+    frame_875.Size = UDim2.new(0, 2, 0, 5)
+    frame_875.Position = UDim2.new(0.33, 0, 0, -10)
+    frame_875.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_875.BackgroundTransparency = 0.75
+    frame_875.BorderSizePixel = 0
+    frame_875.ZIndex = 1
+    frame_875.Parent = frame_875
+    local uicorner_288 = Instance.new("UICorner")
+
+    uicorner_288.CornerRadius = UDim.new(1, 0)
+    local v236 = TweenService:Create(TweenService, {}, TweenInfo.new(13, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_875.Position.X.Scale, 0, 1, 10)
+})
+    local v237 = v236:Play()
+    v236.Completed:Connect(function(r, I, h)
+    local v1 = frame_875.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_409 = Instance.new("Frame")
+
+    frame_409.Size = UDim2.new(0, 4, 0, 2)
+    frame_409.Position = UDim2.new(0.08, 0, 0, -10)
+    frame_409.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_409.BackgroundTransparency = 0.59
+    frame_409.BorderSizePixel = 0
+    frame_409.ZIndex = 1
+    frame_409.Parent = frame_409
+    local uicorner_917 = Instance.new("UICorner")
+
+    uicorner_917.CornerRadius = UDim.new(1, 0)
+    local v250 = TweenService:Create(TweenService, {}, TweenInfo.new(8, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_409.Position.X.Scale, 0, 1, 10)
+})
+    local v251 = v250:Play()
+    v250.Completed:Connect(function(r, I, h)
+    local v1 = frame_409.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_487 = Instance.new("Frame")
+
+    frame_487.Size = UDim2.new(0, 5, 0, 2)
+    frame_487.Position = UDim2.new(0.12, 0, 0, -10)
+    frame_487.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_487.BackgroundTransparency = 0.44
+    frame_487.BorderSizePixel = 0
+    frame_487.ZIndex = 1
+    frame_487.Parent = frame_487
+    local uicorner_7 = Instance.new("UICorner")
+
+    uicorner_7.CornerRadius = UDim.new(1, 0)
+    local v264 = TweenService:Create(TweenService, {}, TweenInfo.new(14, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_487.Position.X.Scale, 0, 1, 10)
+})
+    local v265 = v264:Play()
+    v264.Completed:Connect(function(r, I, h)
+    local v1 = frame_487.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_775 = Instance.new("Frame")
+
+    frame_775.Size = UDim2.new(0, 5, 0, 4)
+    frame_775.Position = UDim2.new(0.29, 0, 0, -10)
+    frame_775.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_775.BackgroundTransparency = 0.57
+    frame_775.BorderSizePixel = 0
+    frame_775.ZIndex = 1
+    frame_775.Parent = frame_775
+    local uicorner_777 = Instance.new("UICorner")
+
+    uicorner_777.CornerRadius = UDim.new(1, 0)
+    local v278 = TweenService:Create(TweenService, {}, TweenInfo.new(15, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_775.Position.X.Scale, 0, 1, 10)
+})
+    local v279 = v278:Play()
+    v278.Completed:Connect(function(r, I, h)
+    local v1 = frame_775.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_835 = Instance.new("Frame")
+
+    frame_835.Size = UDim2.new(0, 5, 0, 4)
+    frame_835.Position = UDim2.new(0.83, 0, 0, -10)
+    frame_835.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_835.BackgroundTransparency = 0.42
+    frame_835.BorderSizePixel = 0
+    frame_835.ZIndex = 1
+    frame_835.Parent = frame_835
+    local uicorner_384 = Instance.new("UICorner")
+
+    uicorner_384.CornerRadius = UDim.new(1, 0)
+    local v292 = TweenService:Create(TweenService, {}, TweenInfo.new(14, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_835.Position.X.Scale, 0, 1, 10)
+})
+    local v293 = v292:Play()
+    v292.Completed:Connect(function(r, I, h)
+    local v1 = frame_835.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_80 = Instance.new("Frame")
+
+    frame_80.Size = UDim2.new(0, 5, 0, 4)
+    frame_80.Position = UDim2.new(0.62, 0, 0, -10)
+    frame_80.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_80.BackgroundTransparency = 0.68
+    frame_80.BorderSizePixel = 0
+    frame_80.ZIndex = 1
+    frame_80.Parent = frame_80
+    local uicorner_610 = Instance.new("UICorner")
+
+    uicorner_610.CornerRadius = UDim.new(1, 0)
+    local v306 = TweenService:Create(TweenService, {}, TweenInfo.new(9, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_80.Position.X.Scale, 0, 1, 10)
+})
+    local v307 = v306:Play()
+    v306.Completed:Connect(function(r, I, h)
+    local v1 = frame_80.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_399 = Instance.new("Frame")
+
+    frame_399.Size = UDim2.new(0, 3, 0, 3)
+    frame_399.Position = UDim2.new(0.51, 0, 0, -10)
+    frame_399.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_399.BackgroundTransparency = 0.51
+    frame_399.BorderSizePixel = 0
+    frame_399.ZIndex = 1
+    frame_399.Parent = frame_399
+    local uicorner_214 = Instance.new("UICorner")
+
+    uicorner_214.CornerRadius = UDim.new(1, 0)
+    local v320 = TweenService:Create(TweenService, {}, TweenInfo.new(9, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_399.Position.X.Scale, 0, 1, 10)
+})
+    local v321 = v320:Play()
+    v320.Completed:Connect(function(r, I, h)
+    local v1 = frame_399.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_155 = Instance.new("Frame")
+
+    frame_155.Size = UDim2.new(0, 5, 0, 3)
+    frame_155.Position = UDim2.new(0.63, 0, 0, -10)
+    frame_155.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_155.BackgroundTransparency = 0.63
+    frame_155.BorderSizePixel = 0
+    frame_155.ZIndex = 1
+    frame_155.Parent = frame_155
+    local uicorner_307 = Instance.new("UICorner")
+
+    uicorner_307.CornerRadius = UDim.new(1, 0)
+    local v334 = TweenService:Create(TweenService, {}, TweenInfo.new(15, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_155.Position.X.Scale, 0, 1, 10)
+})
+    local v335 = v334:Play()
+    v334.Completed:Connect(function(r, I, h)
+    local v1 = frame_155.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_86 = Instance.new("Frame")
+
+    frame_86.Size = UDim2.new(0, 4, 0, 3)
+    frame_86.Position = UDim2.new(0.15, 0, 0, -10)
+    frame_86.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_86.BackgroundTransparency = 0.41
+    frame_86.BorderSizePixel = 0
+    frame_86.ZIndex = 1
+    frame_86.Parent = frame_86
+    local uicorner_87 = Instance.new("UICorner")
+
+    uicorner_87.CornerRadius = UDim.new(1, 0)
+    local v348 = TweenService:Create(TweenService, {}, TweenInfo.new(13, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_86.Position.X.Scale, 0, 1, 10)
+})
+    local v349 = v348:Play()
+    v348.Completed:Connect(function(r, I, h)
+    local v1 = frame_86.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_973 = Instance.new("Frame")
+
+    frame_973.Size = UDim2.new(0, 2, 0, 5)
+    frame_973.Position = UDim2.new(0.78, 0, 0, -10)
+    frame_973.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_973.BackgroundTransparency = 0.68
+    frame_973.BorderSizePixel = 0
+    frame_973.ZIndex = 1
+    frame_973.Parent = frame_973
+    local uicorner_944 = Instance.new("UICorner")
+
+    uicorner_944.CornerRadius = UDim.new(1, 0)
+    local v362 = TweenService:Create(TweenService, {}, TweenInfo.new(8, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_973.Position.X.Scale, 0, 1, 10)
+})
+    local v363 = v362:Play()
+    v362.Completed:Connect(function(r, I, h)
+    local v1 = frame_973.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_252 = Instance.new("Frame")
+
+    frame_252.Size = UDim2.new(0, 3, 0, 4)
+    frame_252.Position = UDim2.new(0.57, 0, 0, -10)
+    frame_252.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_252.BackgroundTransparency = 0.65
+    frame_252.BorderSizePixel = 0
+    frame_252.ZIndex = 1
+    frame_252.Parent = frame_252
+    local uicorner_876 = Instance.new("UICorner")
+
+    uicorner_876.CornerRadius = UDim.new(1, 0)
+    local v376 = TweenService:Create(TweenService, {}, TweenInfo.new(13, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_252.Position.X.Scale, 0, 1, 10)
+})
+    local v377 = v376:Play()
+    v376.Completed:Connect(function(r, I, h)
+    local v1 = frame_252.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_757 = Instance.new("Frame")
+
+    frame_757.Size = UDim2.new(0, 2, 0, 3)
+    frame_757.Position = UDim2.new(0.41, 0, 0, -10)
+    frame_757.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_757.BackgroundTransparency = 0.52
+    frame_757.BorderSizePixel = 0
+    frame_757.ZIndex = 1
+    frame_757.Parent = frame_757
+    local uicorner_470 = Instance.new("UICorner")
+
+    uicorner_470.CornerRadius = UDim.new(1, 0)
+    local v390 = TweenService:Create(TweenService, {}, TweenInfo.new(15, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_757.Position.X.Scale, 0, 1, 10)
+})
+    local v391 = v390:Play()
+    v390.Completed:Connect(function(r, I, h)
+    local v1 = frame_757.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_136 = Instance.new("Frame")
+
+    frame_136.Size = UDim2.new(0, 2, 0, 4)
+    frame_136.Position = UDim2.new(0.18, 0, 0, -10)
+    frame_136.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_136.BackgroundTransparency = 0.51
+    frame_136.BorderSizePixel = 0
+    frame_136.ZIndex = 1
+    frame_136.Parent = frame_136
+    local uicorner_209 = Instance.new("UICorner")
+
+    uicorner_209.CornerRadius = UDim.new(1, 0)
+    local v404 = TweenService:Create(TweenService, {}, TweenInfo.new(10, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_136.Position.X.Scale, 0, 1, 10)
+})
+    local v405 = v404:Play()
+    v404.Completed:Connect(function(r, I, h)
+    local v1 = frame_136.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_392 = Instance.new("Frame")
+
+    frame_392.Size = UDim2.new(0, 2, 0, 2)
+    frame_392.Position = UDim2.new(0.18, 0, 0, -10)
+    frame_392.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_392.BackgroundTransparency = 0.4
+    frame_392.BorderSizePixel = 0
+    frame_392.ZIndex = 1
+    frame_392.Parent = frame_392
+    local uicorner_134 = Instance.new("UICorner")
+
+    uicorner_134.CornerRadius = UDim.new(1, 0)
+    local v418 = TweenService:Create(TweenService, {}, TweenInfo.new(11, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_392.Position.X.Scale, 0, 1, 10)
+})
+    local v419 = v418:Play()
+    v418.Completed:Connect(function(r, I, h)
+    local v1 = frame_392.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_620 = Instance.new("Frame")
+
+    frame_620.Size = UDim2.new(0, 2, 0, 5)
+    frame_620.Position = UDim2.new(0.32, 0, 0, -10)
+    frame_620.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_620.BackgroundTransparency = 0.74
+    frame_620.BorderSizePixel = 0
+    frame_620.ZIndex = 1
+    frame_620.Parent = frame_620
+    local uicorner_478 = Instance.new("UICorner")
+
+    uicorner_478.CornerRadius = UDim.new(1, 0)
+    local v432 = TweenService:Create(TweenService, {}, TweenInfo.new(9, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_620.Position.X.Scale, 0, 1, 10)
+})
+    local v433 = v432:Play()
+    v432.Completed:Connect(function(r, I, h)
+    local v1 = frame_620.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_513 = Instance.new("Frame")
+
+    frame_513.Size = UDim2.new(0, 4, 0, 2)
+    frame_513.Position = UDim2.new(0.86, 0, 0, -10)
+    frame_513.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_513.BackgroundTransparency = 0.44
+    frame_513.BorderSizePixel = 0
+    frame_513.ZIndex = 1
+    frame_513.Parent = frame_513
+    local uicorner_36 = Instance.new("UICorner")
+
+    uicorner_36.CornerRadius = UDim.new(1, 0)
+    local v446 = TweenService:Create(TweenService, {}, TweenInfo.new(10, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_513.Position.X.Scale, 0, 1, 10)
+})
+    local v447 = v446:Play()
+    v446.Completed:Connect(function(r, I, h)
+    local v1 = frame_513.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_260 = Instance.new("Frame")
+
+    frame_260.Size = UDim2.new(0, 5, 0, 3)
+    frame_260.Position = UDim2.new(0.57, 0, 0, -10)
+    frame_260.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_260.BackgroundTransparency = 0.42
+    frame_260.BorderSizePixel = 0
+    frame_260.ZIndex = 1
+    frame_260.Parent = frame_260
+    local uicorner_767 = Instance.new("UICorner")
+
+    uicorner_767.CornerRadius = UDim.new(1, 0)
+    local v460 = TweenService:Create(TweenService, {}, TweenInfo.new(14, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_260.Position.X.Scale, 0, 1, 10)
+})
+    local v461 = v460:Play()
+    v460.Completed:Connect(function(r, I, h)
+    local v1 = frame_260.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_833 = Instance.new("Frame")
+
+    frame_833.Size = UDim2.new(0, 5, 0, 4)
+    frame_833.Position = UDim2.new(0.85, 0, 0, -10)
+    frame_833.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_833.BackgroundTransparency = 0.41
+    frame_833.BorderSizePixel = 0
+    frame_833.ZIndex = 1
+    frame_833.Parent = frame_833
+    local uicorner_27 = Instance.new("UICorner")
+
+    uicorner_27.CornerRadius = UDim.new(1, 0)
+    local v474 = TweenService:Create(TweenService, {}, TweenInfo.new(8, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_833.Position.X.Scale, 0, 1, 10)
+})
+    local v475 = v474:Play()
+    v474.Completed:Connect(function(r, I, h)
+    local v1 = frame_833.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_107 = Instance.new("Frame")
+
+    frame_107.Size = UDim2.new(0, 5, 0, 5)
+    frame_107.Position = UDim2.new(0.06, 0, 0, -10)
+    frame_107.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_107.BackgroundTransparency = 0.54
+    frame_107.BorderSizePixel = 0
+    frame_107.ZIndex = 1
+    frame_107.Parent = frame_107
+    local uicorner_167 = Instance.new("UICorner")
+
+    uicorner_167.CornerRadius = UDim.new(1, 0)
+    local v488 = TweenService:Create(TweenService, {}, TweenInfo.new(14, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_107.Position.X.Scale, 0, 1, 10)
+})
+    local v489 = v488:Play()
+    v488.Completed:Connect(function(r, I, h)
+    local v1 = frame_107.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_829 = Instance.new("Frame")
+
+    frame_829.Size = UDim2.new(0, 5, 0, 5)
+    frame_829.Position = UDim2.new(0.97, 0, 0, -10)
+    frame_829.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_829.BackgroundTransparency = 0.73
+    frame_829.BorderSizePixel = 0
+    frame_829.ZIndex = 1
+    frame_829.Parent = frame_829
+    local uicorner_60 = Instance.new("UICorner")
+
+    uicorner_60.CornerRadius = UDim.new(1, 0)
+    local v502 = TweenService:Create(TweenService, {}, TweenInfo.new(9, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_829.Position.X.Scale, 0, 1, 10)
+})
+    local v503 = v502:Play()
+    v502.Completed:Connect(function(r, I, h)
+    local v1 = frame_829.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_922 = Instance.new("Frame")
+
+    frame_922.Size = UDim2.new(0, 4, 0, 5)
+    frame_922.Position = UDim2.new(1.0, 0, 0, -10)
+    frame_922.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_922.BackgroundTransparency = 0.56
+    frame_922.BorderSizePixel = 0
+    frame_922.ZIndex = 1
+    frame_922.Parent = frame_922
+    local uicorner_627 = Instance.new("UICorner")
+
+    uicorner_627.CornerRadius = UDim.new(1, 0)
+    local v516 = TweenService:Create(TweenService, {}, TweenInfo.new(11, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_922.Position.X.Scale, 0, 1, 10)
+})
+    local v517 = v516:Play()
+    v516.Completed:Connect(function(r, I, h)
+    local v1 = frame_922.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_544 = Instance.new("Frame")
+
+    frame_544.Size = UDim2.new(0, 2, 0, 2)
+    frame_544.Position = UDim2.new(0.6, 0, 0, -10)
+    frame_544.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_544.BackgroundTransparency = 0.44
+    frame_544.BorderSizePixel = 0
+    frame_544.ZIndex = 1
+    frame_544.Parent = frame_544
+    local uicorner_234 = Instance.new("UICorner")
+
+    uicorner_234.CornerRadius = UDim.new(1, 0)
+    local v530 = TweenService:Create(TweenService, {}, TweenInfo.new(10, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_544.Position.X.Scale, 0, 1, 10)
+})
+    local v531 = v530:Play()
+    v530.Completed:Connect(function(r, I, h)
+    local v1 = frame_544.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_164 = Instance.new("Frame")
+
+    frame_164.Size = UDim2.new(0, 3, 0, 3)
+    frame_164.Position = UDim2.new(0.57, 0, 0, -10)
+    frame_164.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_164.BackgroundTransparency = 0.55
+    frame_164.BorderSizePixel = 0
+    frame_164.ZIndex = 1
+    frame_164.Parent = frame_164
+    local uicorner_86 = Instance.new("UICorner")
+
+    uicorner_86.CornerRadius = UDim.new(1, 0)
+    local v544 = TweenService:Create(TweenService, {}, TweenInfo.new(11, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_164.Position.X.Scale, 0, 1, 10)
+})
+    local v545 = v544:Play()
+    v544.Completed:Connect(function(r, I, h)
+    local v1 = frame_164.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_991 = Instance.new("Frame")
+
+    frame_991.Size = UDim2.new(0, 3, 0, 2)
+    frame_991.Position = UDim2.new(0.94, 0, 0, -10)
+    frame_991.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_991.BackgroundTransparency = 0.51
+    frame_991.BorderSizePixel = 0
+    frame_991.ZIndex = 1
+    frame_991.Parent = frame_991
+    local uicorner_447 = Instance.new("UICorner")
+
+    uicorner_447.CornerRadius = UDim.new(1, 0)
+    local v558 = TweenService:Create(TweenService, {}, TweenInfo.new(9, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_991.Position.X.Scale, 0, 1, 10)
+})
+    local v559 = v558:Play()
+    v558.Completed:Connect(function(r, I, h)
+    local v1 = frame_991.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_133 = Instance.new("Frame")
+
+    frame_133.Size = UDim2.new(0, 5, 0, 2)
+    frame_133.Position = UDim2.new(0.59, 0, 0, -10)
+    frame_133.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_133.BackgroundTransparency = 0.59
+    frame_133.BorderSizePixel = 0
+    frame_133.ZIndex = 1
+    frame_133.Parent = frame_133
+    local uicorner_707 = Instance.new("UICorner")
+
+    uicorner_707.CornerRadius = UDim.new(1, 0)
+    local v572 = TweenService:Create(TweenService, {}, TweenInfo.new(14, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_133.Position.X.Scale, 0, 1, 10)
+})
+    local v573 = v572:Play()
+    v572.Completed:Connect(function(r, I, h)
+    local v1 = frame_133.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_818 = Instance.new("Frame")
+
+    frame_818.Size = UDim2.new(0, 2, 0, 4)
+    frame_818.Position = UDim2.new(0.96, 0, 0, -10)
+    frame_818.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_818.BackgroundTransparency = 0.48
+    frame_818.BorderSizePixel = 0
+    frame_818.ZIndex = 1
+    frame_818.Parent = frame_818
+    local uicorner_936 = Instance.new("UICorner")
+
+    uicorner_936.CornerRadius = UDim.new(1, 0)
+    local v586 = TweenService:Create(TweenService, {}, TweenInfo.new(9, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_818.Position.X.Scale, 0, 1, 10)
+})
+    local v587 = v586:Play()
+    v586.Completed:Connect(function(r, I, h)
+    local v1 = frame_818.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_193 = Instance.new("Frame")
+
+    frame_193.Size = UDim2.new(0, 4, 0, 5)
+    frame_193.Position = UDim2.new(0.62, 0, 0, -10)
+    frame_193.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_193.BackgroundTransparency = 0.61
+    frame_193.BorderSizePixel = 0
+    frame_193.ZIndex = 1
+    frame_193.Parent = frame_193
+    local uicorner_466 = Instance.new("UICorner")
+
+    uicorner_466.CornerRadius = UDim.new(1, 0)
+    local v600 = TweenService:Create(TweenService, {}, TweenInfo.new(14, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_193.Position.X.Scale, 0, 1, 10)
+})
+    local v601 = v600:Play()
+    v600.Completed:Connect(function(r, I, h)
+    local v1 = frame_193.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_735 = Instance.new("Frame")
+
+    frame_735.Size = UDim2.new(0, 2, 0, 4)
+    frame_735.Position = UDim2.new(0.06, 0, 0, -10)
+    frame_735.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_735.BackgroundTransparency = 0.59
+    frame_735.BorderSizePixel = 0
+    frame_735.ZIndex = 1
+    frame_735.Parent = frame_735
+    local uicorner_653 = Instance.new("UICorner")
+
+    uicorner_653.CornerRadius = UDim.new(1, 0)
+    local v614 = TweenService:Create(TweenService, {}, TweenInfo.new(10, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_735.Position.X.Scale, 0, 1, 10)
+})
+    local v615 = v614:Play()
+    v614.Completed:Connect(function(r, I, h)
+    local v1 = frame_735.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_560 = Instance.new("Frame")
+
+    frame_560.Size = UDim2.new(0, 4, 0, 2)
+    frame_560.Position = UDim2.new(0.09, 0, 0, -10)
+    frame_560.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_560.BackgroundTransparency = 0.49
+    frame_560.BorderSizePixel = 0
+    frame_560.ZIndex = 1
+    frame_560.Parent = frame_560
+    local uicorner_122 = Instance.new("UICorner")
+
+    uicorner_122.CornerRadius = UDim.new(1, 0)
+    local v628 = TweenService:Create(TweenService, {}, TweenInfo.new(9, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_560.Position.X.Scale, 0, 1, 10)
+})
+    local v629 = v628:Play()
+    v628.Completed:Connect(function(r, I, h)
+    local v1 = frame_560.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_124 = Instance.new("Frame")
+
+    frame_124.Size = UDim2.new(0, 5, 0, 2)
+    frame_124.Position = UDim2.new(0.36, 0, 0, -10)
+    frame_124.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_124.BackgroundTransparency = 0.68
+    frame_124.BorderSizePixel = 0
+    frame_124.ZIndex = 1
+    frame_124.Parent = frame_124
+    local uicorner_243 = Instance.new("UICorner")
+
+    uicorner_243.CornerRadius = UDim.new(1, 0)
+    local v642 = TweenService:Create(TweenService, {}, TweenInfo.new(14, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_124.Position.X.Scale, 0, 1, 10)
+})
+    local v643 = v642:Play()
+    v642.Completed:Connect(function(r, I, h)
+    local v1 = frame_124.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_749 = Instance.new("Frame")
+
+    frame_749.Size = UDim2.new(0, 4, 0, 4)
+    frame_749.Position = UDim2.new(0.34, 0, 0, -10)
+    frame_749.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_749.BackgroundTransparency = 0.47
+    frame_749.BorderSizePixel = 0
+    frame_749.ZIndex = 1
+    frame_749.Parent = frame_749
+    local uicorner_455 = Instance.new("UICorner")
+
+    uicorner_455.CornerRadius = UDim.new(1, 0)
+    local v656 = TweenService:Create(TweenService, {}, TweenInfo.new(15, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_749.Position.X.Scale, 0, 1, 10)
+})
+    local v657 = v656:Play()
+    v656.Completed:Connect(function(r, I, h)
+    local v1 = frame_749.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_538 = Instance.new("Frame")
+
+    frame_538.Size = UDim2.new(0, 3, 0, 5)
+    frame_538.Position = UDim2.new(0.06, 0, 0, -10)
+    frame_538.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_538.BackgroundTransparency = 0.43
+    frame_538.BorderSizePixel = 0
+    frame_538.ZIndex = 1
+    frame_538.Parent = frame_538
+    local uicorner_314 = Instance.new("UICorner")
+
+    uicorner_314.CornerRadius = UDim.new(1, 0)
+    local v670 = TweenService:Create(TweenService, {}, TweenInfo.new(13, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_538.Position.X.Scale, 0, 1, 10)
+})
+    local v671 = v670:Play()
+    v670.Completed:Connect(function(r, I, h)
+    local v1 = frame_538.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_877 = Instance.new("Frame")
+
+    frame_877.Size = UDim2.new(0, 5, 0, 5)
+    frame_877.Position = UDim2.new(0.14, 0, 0, -10)
+    frame_877.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_877.BackgroundTransparency = 0.43
+    frame_877.BorderSizePixel = 0
+    frame_877.ZIndex = 1
+    frame_877.Parent = frame_877
+    local uicorner_924 = Instance.new("UICorner")
+
+    uicorner_924.CornerRadius = UDim.new(1, 0)
+    local v684 = TweenService:Create(TweenService, {}, TweenInfo.new(9, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_877.Position.X.Scale, 0, 1, 10)
+})
+    local v685 = v684:Play()
+    v684.Completed:Connect(function(r, I, h)
+    local v1 = frame_877.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_769 = Instance.new("Frame")
+
+    frame_769.Size = UDim2.new(0, 3, 0, 4)
+    frame_769.Position = UDim2.new(0.55, 0, 0, -10)
+    frame_769.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_769.BackgroundTransparency = 0.58
+    frame_769.BorderSizePixel = 0
+    frame_769.ZIndex = 1
+    frame_769.Parent = frame_769
+    local uicorner_344 = Instance.new("UICorner")
+
+    uicorner_344.CornerRadius = UDim.new(1, 0)
+    local v698 = TweenService:Create(TweenService, {}, TweenInfo.new(12, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_769.Position.X.Scale, 0, 1, 10)
+})
+    local v699 = v698:Play()
+    v698.Completed:Connect(function(r, I, h)
+    local v1 = frame_769.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_78 = Instance.new("Frame")
+
+    frame_78.Size = UDim2.new(0, 2, 0, 4)
+    frame_78.Position = UDim2.new(0.27, 0, 0, -10)
+    frame_78.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_78.BackgroundTransparency = 0.6
+    frame_78.BorderSizePixel = 0
+    frame_78.ZIndex = 1
+    frame_78.Parent = frame_78
+    local uicorner_538 = Instance.new("UICorner")
+
+    uicorner_538.CornerRadius = UDim.new(1, 0)
+    local v712 = TweenService:Create(TweenService, {}, TweenInfo.new(9, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_78.Position.X.Scale, 0, 1, 10)
+})
+    local v713 = v712:Play()
+    v712.Completed:Connect(function(r, I, h)
+    local v1 = frame_78.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_982 = Instance.new("Frame")
+
+    frame_982.Size = UDim2.new(0, 2, 0, 2)
+    frame_982.Position = UDim2.new(0.08, 0, 0, -10)
+    frame_982.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_982.BackgroundTransparency = 0.58
+    frame_982.BorderSizePixel = 0
+    frame_982.ZIndex = 1
+    frame_982.Parent = frame_982
+    local uicorner_901 = Instance.new("UICorner")
+
+    uicorner_901.CornerRadius = UDim.new(1, 0)
+    local v726 = TweenService:Create(TweenService, {}, TweenInfo.new(13, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_982.Position.X.Scale, 0, 1, 10)
+})
+    local v727 = v726:Play()
+    v726.Completed:Connect(function(r, I, h)
+    local v1 = frame_982.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_879 = Instance.new("Frame")
+
+    frame_879.Size = UDim2.new(0, 3, 0, 4)
+    frame_879.Position = UDim2.new(0.98, 0, 0, -10)
+    frame_879.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_879.BackgroundTransparency = 0.54
+    frame_879.BorderSizePixel = 0
+    frame_879.ZIndex = 1
+    frame_879.Parent = frame_879
+    local uicorner_783 = Instance.new("UICorner")
+
+    uicorner_783.CornerRadius = UDim.new(1, 0)
+    local v740 = TweenService:Create(TweenService, {}, TweenInfo.new(9, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_879.Position.X.Scale, 0, 1, 10)
+})
+    local v741 = v740:Play()
+    v740.Completed:Connect(function(r, I, h)
+    local v1 = frame_879.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_63 = Instance.new("Frame")
+
+    frame_63.Size = UDim2.new(0, 5, 0, 4)
+    frame_63.Position = UDim2.new(0.58, 0, 0, -10)
+    frame_63.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_63.BackgroundTransparency = 0.44
+    frame_63.BorderSizePixel = 0
+    frame_63.ZIndex = 1
+    frame_63.Parent = frame_63
+    local uicorner_257 = Instance.new("UICorner")
+
+    uicorner_257.CornerRadius = UDim.new(1, 0)
+    local v754 = TweenService:Create(TweenService, {}, TweenInfo.new(14, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_63.Position.X.Scale, 0, 1, 10)
+})
+    local v755 = v754:Play()
+    v754.Completed:Connect(function(r, I, h)
+    local v1 = frame_63.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_369 = Instance.new("Frame")
+
+    frame_369.Size = UDim2.new(0, 3, 0, 3)
+    frame_369.Position = UDim2.new(0.94, 0, 0, -10)
+    frame_369.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_369.BackgroundTransparency = 0.4
+    frame_369.BorderSizePixel = 0
+    frame_369.ZIndex = 1
+    frame_369.Parent = frame_369
+    local uicorner_694 = Instance.new("UICorner")
+
+    uicorner_694.CornerRadius = UDim.new(1, 0)
+    local v768 = TweenService:Create(TweenService, {}, TweenInfo.new(8, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_369.Position.X.Scale, 0, 1, 10)
+})
+    local v769 = v768:Play()
+    v768.Completed:Connect(function(r, I, h)
+    local v1 = frame_369.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_904 = Instance.new("Frame")
+
+    frame_904.Size = UDim2.new(0, 2, 0, 2)
+    frame_904.Position = UDim2.new(0.43, 0, 0, -10)
+    frame_904.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_904.BackgroundTransparency = 0.44
+    frame_904.BorderSizePixel = 0
+    frame_904.ZIndex = 1
+    frame_904.Parent = frame_904
+    local uicorner_803 = Instance.new("UICorner")
+
+    uicorner_803.CornerRadius = UDim.new(1, 0)
+    local v782 = TweenService:Create(TweenService, {}, TweenInfo.new(14, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_904.Position.X.Scale, 0, 1, 10)
+})
+    local v783 = v782:Play()
+    v782.Completed:Connect(function(r, I, h)
+    local v1 = frame_904.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_294 = Instance.new("Frame")
+
+    frame_294.Size = UDim2.new(0, 3, 0, 5)
+    frame_294.Position = UDim2.new(0.71, 0, 0, -10)
+    frame_294.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_294.BackgroundTransparency = 0.45
+    frame_294.BorderSizePixel = 0
+    frame_294.ZIndex = 1
+    frame_294.Parent = frame_294
+    local uicorner_175 = Instance.new("UICorner")
+
+    uicorner_175.CornerRadius = UDim.new(1, 0)
+    local v796 = TweenService:Create(TweenService, {}, TweenInfo.new(15, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_294.Position.X.Scale, 0, 1, 10)
+})
+    local v797 = v796:Play()
+    v796.Completed:Connect(function(r, I, h)
+    local v1 = frame_294.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_961 = Instance.new("Frame")
+
+    frame_961.Size = UDim2.new(0, 4, 0, 5)
+    frame_961.Position = UDim2.new(0.09, 0, 0, -10)
+    frame_961.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_961.BackgroundTransparency = 0.71
+    frame_961.BorderSizePixel = 0
+    frame_961.ZIndex = 1
+    frame_961.Parent = frame_961
+    local uicorner_661 = Instance.new("UICorner")
+
+    uicorner_661.CornerRadius = UDim.new(1, 0)
+    local v810 = TweenService:Create(TweenService, {}, TweenInfo.new(10, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_961.Position.X.Scale, 0, 1, 10)
+})
+    local v811 = v810:Play()
+    v810.Completed:Connect(function(r, I, h)
+    local v1 = frame_961.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_128 = Instance.new("Frame")
+
+    frame_128.Size = UDim2.new(0, 5, 0, 2)
+    frame_128.Position = UDim2.new(0.13, 0, 0, -10)
+    frame_128.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_128.BackgroundTransparency = 0.57
+    frame_128.BorderSizePixel = 0
+    frame_128.ZIndex = 1
+    frame_128.Parent = frame_128
+    local uicorner_228 = Instance.new("UICorner")
+
+    uicorner_228.CornerRadius = UDim.new(1, 0)
+    local v824 = TweenService:Create(TweenService, {}, TweenInfo.new(8, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_128.Position.X.Scale, 0, 1, 10)
+})
+    local v825 = v824:Play()
+    v824.Completed:Connect(function(r, I, h)
+    local v1 = frame_128.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_440 = Instance.new("Frame")
+
+    frame_440.Size = UDim2.new(0, 2, 0, 5)
+    frame_440.Position = UDim2.new(0.55, 0, 0, -10)
+    frame_440.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_440.BackgroundTransparency = 0.75
+    frame_440.BorderSizePixel = 0
+    frame_440.ZIndex = 1
+    frame_440.Parent = frame_440
+    local uicorner_637 = Instance.new("UICorner")
+
+    uicorner_637.CornerRadius = UDim.new(1, 0)
+    local v838 = TweenService:Create(TweenService, {}, TweenInfo.new(12, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_440.Position.X.Scale, 0, 1, 10)
+})
+    local v839 = v838:Play()
+    v838.Completed:Connect(function(r, I, h)
+    local v1 = frame_440.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_15 = Instance.new("Frame")
+
+    frame_15.Size = UDim2.new(0, 4, 0, 5)
+    frame_15.Position = UDim2.new(0.17, 0, 0, -10)
+    frame_15.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_15.BackgroundTransparency = 0.64
+    frame_15.BorderSizePixel = 0
+    frame_15.ZIndex = 1
+    frame_15.Parent = frame_15
+    local uicorner_882 = Instance.new("UICorner")
+
+    uicorner_882.CornerRadius = UDim.new(1, 0)
+    local v852 = TweenService:Create(TweenService, {}, TweenInfo.new(11, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_15.Position.X.Scale, 0, 1, 10)
+})
+    local v853 = v852:Play()
+    v852.Completed:Connect(function(r, I, h)
+    local v1 = frame_15.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_508 = Instance.new("Frame")
+
+    frame_508.Size = UDim2.new(0, 2, 0, 4)
+    frame_508.Position = UDim2.new(0.39, 0, 0, -10)
+    frame_508.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_508.BackgroundTransparency = 0.71
+    frame_508.BorderSizePixel = 0
+    frame_508.ZIndex = 1
+    frame_508.Parent = frame_508
+    local uicorner_45 = Instance.new("UICorner")
+
+    uicorner_45.CornerRadius = UDim.new(1, 0)
+    local v866 = TweenService:Create(TweenService, {}, TweenInfo.new(13, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_508.Position.X.Scale, 0, 1, 10)
+})
+    local v867 = v866:Play()
+    v866.Completed:Connect(function(r, I, h)
+    local v1 = frame_508.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_826 = Instance.new("Frame")
+
+    frame_826.Size = UDim2.new(0, 5, 0, 2)
+    frame_826.Position = UDim2.new(0.3, 0, 0, -10)
+    frame_826.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_826.BackgroundTransparency = 0.42
+    frame_826.BorderSizePixel = 0
+    frame_826.ZIndex = 1
+    frame_826.Parent = frame_826
+    local uicorner_245 = Instance.new("UICorner")
+
+    uicorner_245.CornerRadius = UDim.new(1, 0)
+    local v880 = TweenService:Create(TweenService, {}, TweenInfo.new(13, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_826.Position.X.Scale, 0, 1, 10)
+})
+    local v881 = v880:Play()
+    v880.Completed:Connect(function(r, I, h)
+    local v1 = frame_826.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_429 = Instance.new("Frame")
+
+    frame_429.Size = UDim2.new(0, 3, 0, 2)
+    frame_429.Position = UDim2.new(0.42, 0, 0, -10)
+    frame_429.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_429.BackgroundTransparency = 0.44
+    frame_429.BorderSizePixel = 0
+    frame_429.ZIndex = 1
+    frame_429.Parent = frame_429
+    local uicorner_598 = Instance.new("UICorner")
+
+    uicorner_598.CornerRadius = UDim.new(1, 0)
+    local v894 = TweenService:Create(TweenService, {}, TweenInfo.new(13, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_429.Position.X.Scale, 0, 1, 10)
+})
+    local v895 = v894:Play()
+    v894.Completed:Connect(function(r, I, h)
+    local v1 = frame_429.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_118 = Instance.new("Frame")
+
+    frame_118.Size = UDim2.new(0, 4, 0, 3)
+    frame_118.Position = UDim2.new(0.81, 0, 0, -10)
+    frame_118.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_118.BackgroundTransparency = 0.6
+    frame_118.BorderSizePixel = 0
+    frame_118.ZIndex = 1
+    frame_118.Parent = frame_118
+    local uicorner_718 = Instance.new("UICorner")
+
+    uicorner_718.CornerRadius = UDim.new(1, 0)
+    local v908 = TweenService:Create(TweenService, {}, TweenInfo.new(11, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_118.Position.X.Scale, 0, 1, 10)
+})
+    local v909 = v908:Play()
+    v908.Completed:Connect(function(r, I, h)
+    local v1 = frame_118.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_923 = Instance.new("Frame")
+
+    frame_923.Size = UDim2.new(0, 2, 0, 3)
+    frame_923.Position = UDim2.new(0.79, 0, 0, -10)
+    frame_923.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_923.BackgroundTransparency = 0.49
+    frame_923.BorderSizePixel = 0
+    frame_923.ZIndex = 1
+    frame_923.Parent = frame_923
+    local uicorner_115 = Instance.new("UICorner")
+
+    uicorner_115.CornerRadius = UDim.new(1, 0)
+    local v922 = TweenService:Create(TweenService, {}, TweenInfo.new(14, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_923.Position.X.Scale, 0, 1, 10)
+})
+    local v923 = v922:Play()
+    v922.Completed:Connect(function(r, I, h)
+    local v1 = frame_923.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_944 = Instance.new("Frame")
+
+    frame_944.Size = UDim2.new(0, 5, 0, 3)
+    frame_944.Position = UDim2.new(0.0, 0, 0, -10)
+    frame_944.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_944.BackgroundTransparency = 0.45
+    frame_944.BorderSizePixel = 0
+    frame_944.ZIndex = 1
+    frame_944.Parent = frame_944
+    local uicorner_70 = Instance.new("UICorner")
+
+    uicorner_70.CornerRadius = UDim.new(1, 0)
+    local v936 = TweenService:Create(TweenService, {}, TweenInfo.new(12, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_944.Position.X.Scale, 0, 1, 10)
+})
+    local v937 = v936:Play()
+    v936.Completed:Connect(function(r, I, h)
+    local v1 = frame_944.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_561 = Instance.new("Frame")
+
+    frame_561.Size = UDim2.new(0, 4, 0, 2)
+    frame_561.Position = UDim2.new(0.69, 0, 0, -10)
+    frame_561.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_561.BackgroundTransparency = 0.45
+    frame_561.BorderSizePixel = 0
+    frame_561.ZIndex = 1
+    frame_561.Parent = frame_561
+    local uicorner_702 = Instance.new("UICorner")
+
+    uicorner_702.CornerRadius = UDim.new(1, 0)
+    local v950 = TweenService:Create(TweenService, {}, TweenInfo.new(14, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_561.Position.X.Scale, 0, 1, 10)
+})
+    local v951 = v950:Play()
+    v950.Completed:Connect(function(r, I, h)
+    local v1 = frame_561.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_392 = Instance.new("Frame")
+
+    frame_392.Size = UDim2.new(0, 2, 0, 2)
+    frame_392.Position = UDim2.new(0.97, 0, 0, -10)
+    frame_392.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_392.BackgroundTransparency = 0.71
+    frame_392.BorderSizePixel = 0
+    frame_392.ZIndex = 1
+    frame_392.Parent = frame_392
+    local uicorner_544 = Instance.new("UICorner")
+
+    uicorner_544.CornerRadius = UDim.new(1, 0)
+    local v964 = TweenService:Create(TweenService, {}, TweenInfo.new(8, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_392.Position.X.Scale, 0, 1, 10)
+})
+    local v965 = v964:Play()
+    v964.Completed:Connect(function(r, I, h)
+    local v1 = frame_392.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_756 = Instance.new("Frame")
+
+    frame_756.Size = UDim2.new(0, 4, 0, 4)
+    frame_756.Position = UDim2.new(0.01, 0, 0, -10)
+    frame_756.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_756.BackgroundTransparency = 0.62
+    frame_756.BorderSizePixel = 0
+    frame_756.ZIndex = 1
+    frame_756.Parent = frame_756
+    local uicorner_372 = Instance.new("UICorner")
+
+    uicorner_372.CornerRadius = UDim.new(1, 0)
+    local v978 = TweenService:Create(TweenService, {}, TweenInfo.new(8, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_756.Position.X.Scale, 0, 1, 10)
+})
+    local v979 = v978:Play()
+    v978.Completed:Connect(function(r, I, h)
+    local v1 = frame_756.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_284 = Instance.new("Frame")
+
+    frame_284.Size = UDim2.new(0, 3, 0, 4)
+    frame_284.Position = UDim2.new(0.44, 0, 0, -10)
+    frame_284.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_284.BackgroundTransparency = 0.59
+    frame_284.BorderSizePixel = 0
+    frame_284.ZIndex = 1
+    frame_284.Parent = frame_284
+    local uicorner_80 = Instance.new("UICorner")
+
+    uicorner_80.CornerRadius = UDim.new(1, 0)
+    local v992 = TweenService:Create(TweenService, {}, TweenInfo.new(8, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_284.Position.X.Scale, 0, 1, 10)
+})
+    local v993 = v992:Play()
+    v992.Completed:Connect(function(r, I, h)
+    local v1 = frame_284.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_632 = Instance.new("Frame")
+
+    frame_632.Size = UDim2.new(0, 2, 0, 5)
+    frame_632.Position = UDim2.new(0.79, 0, 0, -10)
+    frame_632.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_632.BackgroundTransparency = 0.66
+    frame_632.BorderSizePixel = 0
+    frame_632.ZIndex = 1
+    frame_632.Parent = frame_632
+    local uicorner_637 = Instance.new("UICorner")
+
+    uicorner_637.CornerRadius = UDim.new(1, 0)
+    local v1006 = TweenService:Create(TweenService, {}, TweenInfo.new(8, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_632.Position.X.Scale, 0, 1, 10)
+})
+    local v1007 = v1006:Play()
+    v1006.Completed:Connect(function(r, I, h)
+    local v1 = frame_632.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_792 = Instance.new("Frame")
+
+    frame_792.Size = UDim2.new(0, 2, 0, 2)
+    frame_792.Position = UDim2.new(0.67, 0, 0, -10)
+    frame_792.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_792.BackgroundTransparency = 0.64
+    frame_792.BorderSizePixel = 0
+    frame_792.ZIndex = 1
+    frame_792.Parent = frame_792
+    local uicorner_130 = Instance.new("UICorner")
+
+    uicorner_130.CornerRadius = UDim.new(1, 0)
+    local v1020 = TweenService:Create(TweenService, {}, TweenInfo.new(11, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_792.Position.X.Scale, 0, 1, 10)
+})
+    local v1021 = v1020:Play()
+    v1020.Completed:Connect(function(r, I, h)
+    local v1 = frame_792.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_647 = Instance.new("Frame")
+
+    frame_647.Size = UDim2.new(0, 2, 0, 3)
+    frame_647.Position = UDim2.new(0.28, 0, 0, -10)
+    frame_647.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_647.BackgroundTransparency = 0.55
+    frame_647.BorderSizePixel = 0
+    frame_647.ZIndex = 1
+    frame_647.Parent = frame_647
+    local uicorner_537 = Instance.new("UICorner")
+
+    uicorner_537.CornerRadius = UDim.new(1, 0)
+    local v1034 = TweenService:Create(TweenService, {}, TweenInfo.new(14, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_647.Position.X.Scale, 0, 1, 10)
+})
+    local v1035 = v1034:Play()
+    v1034.Completed:Connect(function(r, I, h)
+    local v1 = frame_647.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_18 = Instance.new("Frame")
+
+    frame_18.Size = UDim2.new(0, 3, 0, 2)
+    frame_18.Position = UDim2.new(0.57, 0, 0, -10)
+    frame_18.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_18.BackgroundTransparency = 0.58
+    frame_18.BorderSizePixel = 0
+    frame_18.ZIndex = 1
+    frame_18.Parent = frame_18
+    local uicorner_168 = Instance.new("UICorner")
+
+    uicorner_168.CornerRadius = UDim.new(1, 0)
+    local v1048 = TweenService:Create(TweenService, {}, TweenInfo.new(13, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_18.Position.X.Scale, 0, 1, 10)
+})
+    local v1049 = v1048:Play()
+    v1048.Completed:Connect(function(r, I, h)
+    local v1 = frame_18.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_195 = Instance.new("Frame")
+
+    frame_195.Size = UDim2.new(0, 3, 0, 5)
+    frame_195.Position = UDim2.new(0.93, 0, 0, -10)
+    frame_195.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_195.BackgroundTransparency = 0.44
+    frame_195.BorderSizePixel = 0
+    frame_195.ZIndex = 1
+    frame_195.Parent = frame_195
+    local uicorner_977 = Instance.new("UICorner")
+
+    uicorner_977.CornerRadius = UDim.new(1, 0)
+    local v1062 = TweenService:Create(TweenService, {}, TweenInfo.new(8, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_195.Position.X.Scale, 0, 1, 10)
+})
+    local v1063 = v1062:Play()
+    v1062.Completed:Connect(function(r, I, h)
+    local v1 = frame_195.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_107 = Instance.new("Frame")
+
+    frame_107.Size = UDim2.new(0, 2, 0, 4)
+    frame_107.Position = UDim2.new(0.78, 0, 0, -10)
+    frame_107.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_107.BackgroundTransparency = 0.49
+    frame_107.BorderSizePixel = 0
+    frame_107.ZIndex = 1
+    frame_107.Parent = frame_107
+    local uicorner_36 = Instance.new("UICorner")
+
+    uicorner_36.CornerRadius = UDim.new(1, 0)
+    local v1076 = TweenService:Create(TweenService, {}, TweenInfo.new(9, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_107.Position.X.Scale, 0, 1, 10)
+})
+    local v1077 = v1076:Play()
+    v1076.Completed:Connect(function(r, I, h)
+    local v1 = frame_107.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_83 = Instance.new("Frame")
+
+    frame_83.Size = UDim2.new(0, 4, 0, 2)
+    frame_83.Position = UDim2.new(0.5, 0, 0, -10)
+    frame_83.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_83.BackgroundTransparency = 0.46
+    frame_83.BorderSizePixel = 0
+    frame_83.ZIndex = 1
+    frame_83.Parent = frame_83
+    local uicorner_40 = Instance.new("UICorner")
+
+    uicorner_40.CornerRadius = UDim.new(1, 0)
+    local v1090 = TweenService:Create(TweenService, {}, TweenInfo.new(9, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_83.Position.X.Scale, 0, 1, 10)
+})
+    local v1091 = v1090:Play()
+    v1090.Completed:Connect(function(r, I, h)
+    local v1 = frame_83.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_473 = Instance.new("Frame")
+
+    frame_473.Size = UDim2.new(0, 3, 0, 5)
+    frame_473.Position = UDim2.new(0.99, 0, 0, -10)
+    frame_473.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_473.BackgroundTransparency = 0.58
+    frame_473.BorderSizePixel = 0
+    frame_473.ZIndex = 1
+    frame_473.Parent = frame_473
+    local uicorner_454 = Instance.new("UICorner")
+
+    uicorner_454.CornerRadius = UDim.new(1, 0)
+    local v1104 = TweenService:Create(TweenService, {}, TweenInfo.new(9, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_473.Position.X.Scale, 0, 1, 10)
+})
+    local v1105 = v1104:Play()
+    v1104.Completed:Connect(function(r, I, h)
+    local v1 = frame_473.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_935 = Instance.new("Frame")
+
+    frame_935.Size = UDim2.new(0, 2, 0, 4)
+    frame_935.Position = UDim2.new(0.05, 0, 0, -10)
+    frame_935.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_935.BackgroundTransparency = 0.41
+    frame_935.BorderSizePixel = 0
+    frame_935.ZIndex = 1
+    frame_935.Parent = frame_935
+    local uicorner_677 = Instance.new("UICorner")
+
+    uicorner_677.CornerRadius = UDim.new(1, 0)
+    local v1118 = TweenService:Create(TweenService, {}, TweenInfo.new(15, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_935.Position.X.Scale, 0, 1, 10)
+})
+    local v1119 = v1118:Play()
+    v1118.Completed:Connect(function(r, I, h)
+    local v1 = frame_935.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_807 = Instance.new("Frame")
+
+    frame_807.Size = UDim2.new(0, 4, 0, 5)
+    frame_807.Position = UDim2.new(0.06, 0, 0, -10)
+    frame_807.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_807.BackgroundTransparency = 0.6
+    frame_807.BorderSizePixel = 0
+    frame_807.ZIndex = 1
+    frame_807.Parent = frame_807
+    local uicorner_132 = Instance.new("UICorner")
+
+    uicorner_132.CornerRadius = UDim.new(1, 0)
+    local v1132 = TweenService:Create(TweenService, {}, TweenInfo.new(15, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_807.Position.X.Scale, 0, 1, 10)
+})
+    local v1133 = v1132:Play()
+    v1132.Completed:Connect(function(r, I, h)
+    local v1 = frame_807.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_783 = Instance.new("Frame")
+
+    frame_783.Size = UDim2.new(0, 2, 0, 2)
+    frame_783.Position = UDim2.new(0.98, 0, 0, -10)
+    frame_783.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_783.BackgroundTransparency = 0.47
+    frame_783.BorderSizePixel = 0
+    frame_783.ZIndex = 1
+    frame_783.Parent = frame_783
+    local uicorner_366 = Instance.new("UICorner")
+
+    uicorner_366.CornerRadius = UDim.new(1, 0)
+    local v1146 = TweenService:Create(TweenService, {}, TweenInfo.new(9, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_783.Position.X.Scale, 0, 1, 10)
+})
+    local v1147 = v1146:Play()
+    v1146.Completed:Connect(function(r, I, h)
+    local v1 = frame_783.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_711 = Instance.new("Frame")
+
+    frame_711.Size = UDim2.new(0, 5, 0, 4)
+    frame_711.Position = UDim2.new(0.22, 0, 0, -10)
+    frame_711.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_711.BackgroundTransparency = 0.54
+    frame_711.BorderSizePixel = 0
+    frame_711.ZIndex = 1
+    frame_711.Parent = frame_711
+    local uicorner_787 = Instance.new("UICorner")
+
+    uicorner_787.CornerRadius = UDim.new(1, 0)
+    local v1160 = TweenService:Create(TweenService, {}, TweenInfo.new(15, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_711.Position.X.Scale, 0, 1, 10)
+})
+    local v1161 = v1160:Play()
+    v1160.Completed:Connect(function(r, I, h)
+    local v1 = frame_711.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_845 = Instance.new("Frame")
+
+    frame_845.Size = UDim2.new(0, 4, 0, 3)
+    frame_845.Position = UDim2.new(0.88, 0, 0, -10)
+    frame_845.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_845.BackgroundTransparency = 0.48
+    frame_845.BorderSizePixel = 0
+    frame_845.ZIndex = 1
+    frame_845.Parent = frame_845
+    local uicorner_364 = Instance.new("UICorner")
+
+    uicorner_364.CornerRadius = UDim.new(1, 0)
+    local v1174 = TweenService:Create(TweenService, {}, TweenInfo.new(8, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_845.Position.X.Scale, 0, 1, 10)
+})
+    local v1175 = v1174:Play()
+    v1174.Completed:Connect(function(r, I, h)
+    local v1 = frame_845.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_906 = Instance.new("Frame")
+
+    frame_906.Size = UDim2.new(0, 5, 0, 2)
+    frame_906.Position = UDim2.new(0.48, 0, 0, -10)
+    frame_906.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_906.BackgroundTransparency = 0.42
+    frame_906.BorderSizePixel = 0
+    frame_906.ZIndex = 1
+    frame_906.Parent = frame_906
+    local uicorner_94 = Instance.new("UICorner")
+
+    uicorner_94.CornerRadius = UDim.new(1, 0)
+    local v1188 = TweenService:Create(TweenService, {}, TweenInfo.new(9, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_906.Position.X.Scale, 0, 1, 10)
+})
+    local v1189 = v1188:Play()
+    v1188.Completed:Connect(function(r, I, h)
+    local v1 = frame_906.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_253 = Instance.new("Frame")
+
+    frame_253.Size = UDim2.new(0, 3, 0, 5)
+    frame_253.Position = UDim2.new(0.45, 0, 0, -10)
+    frame_253.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_253.BackgroundTransparency = 0.64
+    frame_253.BorderSizePixel = 0
+    frame_253.ZIndex = 1
+    frame_253.Parent = frame_253
+    local uicorner_14 = Instance.new("UICorner")
+
+    uicorner_14.CornerRadius = UDim.new(1, 0)
+    local v1202 = TweenService:Create(TweenService, {}, TweenInfo.new(8, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_253.Position.X.Scale, 0, 1, 10)
+})
+    local v1203 = v1202:Play()
+    v1202.Completed:Connect(function(r, I, h)
+    local v1 = frame_253.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_967 = Instance.new("Frame")
+
+    frame_967.Size = UDim2.new(0, 5, 0, 4)
+    frame_967.Position = UDim2.new(0.37, 0, 0, -10)
+    frame_967.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_967.BackgroundTransparency = 0.6
+    frame_967.BorderSizePixel = 0
+    frame_967.ZIndex = 1
+    frame_967.Parent = frame_967
+    local uicorner_541 = Instance.new("UICorner")
+
+    uicorner_541.CornerRadius = UDim.new(1, 0)
+    local v1216 = TweenService:Create(TweenService, {}, TweenInfo.new(13, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_967.Position.X.Scale, 0, 1, 10)
+})
+    local v1217 = v1216:Play()
+    v1216.Completed:Connect(function(r, I, h)
+    local v1 = frame_967.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_107 = Instance.new("Frame")
+
+    frame_107.Size = UDim2.new(0, 2, 0, 3)
+    frame_107.Position = UDim2.new(0.35, 0, 0, -10)
+    frame_107.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_107.BackgroundTransparency = 0.57
+    frame_107.BorderSizePixel = 0
+    frame_107.ZIndex = 1
+    frame_107.Parent = frame_107
+    local uicorner_318 = Instance.new("UICorner")
+
+    uicorner_318.CornerRadius = UDim.new(1, 0)
+    local v1230 = TweenService:Create(TweenService, {}, TweenInfo.new(11, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_107.Position.X.Scale, 0, 1, 10)
+})
+    local v1231 = v1230:Play()
+    v1230.Completed:Connect(function(r, I, h)
+    local v1 = frame_107.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_263 = Instance.new("Frame")
+
+    frame_263.Size = UDim2.new(0, 4, 0, 5)
+    frame_263.Position = UDim2.new(0.34, 0, 0, -10)
+    frame_263.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_263.BackgroundTransparency = 0.62
+    frame_263.BorderSizePixel = 0
+    frame_263.ZIndex = 1
+    frame_263.Parent = frame_263
+    local uicorner_15 = Instance.new("UICorner")
+
+    uicorner_15.CornerRadius = UDim.new(1, 0)
+    local v1244 = TweenService:Create(TweenService, {}, TweenInfo.new(9, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_263.Position.X.Scale, 0, 1, 10)
+})
+    local v1245 = v1244:Play()
+    v1244.Completed:Connect(function(r, I, h)
+    local v1 = frame_263.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_320 = Instance.new("Frame")
+
+    frame_320.Size = UDim2.new(0, 2, 0, 3)
+    frame_320.Position = UDim2.new(1.0, 0, 0, -10)
+    frame_320.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_320.BackgroundTransparency = 0.41
+    frame_320.BorderSizePixel = 0
+    frame_320.ZIndex = 1
+    frame_320.Parent = frame_320
+    local uicorner_442 = Instance.new("UICorner")
+
+    uicorner_442.CornerRadius = UDim.new(1, 0)
+    local v1258 = TweenService:Create(TweenService, {}, TweenInfo.new(10, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_320.Position.X.Scale, 0, 1, 10)
+})
+    local v1259 = v1258:Play()
+    v1258.Completed:Connect(function(r, I, h)
+    local v1 = frame_320.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_223 = Instance.new("Frame")
+
+    frame_223.Size = UDim2.new(0, 5, 0, 3)
+    frame_223.Position = UDim2.new(0.79, 0, 0, -10)
+    frame_223.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_223.BackgroundTransparency = 0.58
+    frame_223.BorderSizePixel = 0
+    frame_223.ZIndex = 1
+    frame_223.Parent = frame_223
+    local uicorner_112 = Instance.new("UICorner")
+
+    uicorner_112.CornerRadius = UDim.new(1, 0)
+    local v1272 = TweenService:Create(TweenService, {}, TweenInfo.new(9, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_223.Position.X.Scale, 0, 1, 10)
+})
+    local v1273 = v1272:Play()
+    v1272.Completed:Connect(function(r, I, h)
+    local v1 = frame_223.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_230 = Instance.new("Frame")
+
+    frame_230.Size = UDim2.new(0, 3, 0, 5)
+    frame_230.Position = UDim2.new(0.71, 0, 0, -10)
+    frame_230.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_230.BackgroundTransparency = 0.69
+    frame_230.BorderSizePixel = 0
+    frame_230.ZIndex = 1
+    frame_230.Parent = frame_230
+    local uicorner_380 = Instance.new("UICorner")
+
+    uicorner_380.CornerRadius = UDim.new(1, 0)
+    local v1286 = TweenService:Create(TweenService, {}, TweenInfo.new(8, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_230.Position.X.Scale, 0, 1, 10)
+})
+    local v1287 = v1286:Play()
+    v1286.Completed:Connect(function(r, I, h)
+    local v1 = frame_230.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_900 = Instance.new("Frame")
+
+    frame_900.Size = UDim2.new(0, 5, 0, 3)
+    frame_900.Position = UDim2.new(0.51, 0, 0, -10)
+    frame_900.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_900.BackgroundTransparency = 0.75
+    frame_900.BorderSizePixel = 0
+    frame_900.ZIndex = 1
+    frame_900.Parent = frame_900
+    local uicorner_620 = Instance.new("UICorner")
+
+    uicorner_620.CornerRadius = UDim.new(1, 0)
+    local v1300 = TweenService:Create(TweenService, {}, TweenInfo.new(11, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_900.Position.X.Scale, 0, 1, 10)
+})
+    local v1301 = v1300:Play()
+    v1300.Completed:Connect(function(r, I, h)
+    local v1 = frame_900.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_655 = Instance.new("Frame")
+
+    frame_655.Size = UDim2.new(0, 4, 0, 3)
+    frame_655.Position = UDim2.new(0.71, 0, 0, -10)
+    frame_655.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_655.BackgroundTransparency = 0.45
+    frame_655.BorderSizePixel = 0
+    frame_655.ZIndex = 1
+    frame_655.Parent = frame_655
+    local uicorner_668 = Instance.new("UICorner")
+
+    uicorner_668.CornerRadius = UDim.new(1, 0)
+    local v1314 = TweenService:Create(TweenService, {}, TweenInfo.new(13, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_655.Position.X.Scale, 0, 1, 10)
+})
+    local v1315 = v1314:Play()
+    v1314.Completed:Connect(function(r, I, h)
+    local v1 = frame_655.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_649 = Instance.new("Frame")
+
+    frame_649.Size = UDim2.new(0, 2, 0, 2)
+    frame_649.Position = UDim2.new(0.17, 0, 0, -10)
+    frame_649.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_649.BackgroundTransparency = 0.48
+    frame_649.BorderSizePixel = 0
+    frame_649.ZIndex = 1
+    frame_649.Parent = frame_649
+    local uicorner_360 = Instance.new("UICorner")
+
+    uicorner_360.CornerRadius = UDim.new(1, 0)
+    local v1328 = TweenService:Create(TweenService, {}, TweenInfo.new(14, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_649.Position.X.Scale, 0, 1, 10)
+})
+    local v1329 = v1328:Play()
+    v1328.Completed:Connect(function(r, I, h)
+    local v1 = frame_649.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_857 = Instance.new("Frame")
+
+    frame_857.Size = UDim2.new(0, 5, 0, 2)
+    frame_857.Position = UDim2.new(0.68, 0, 0, -10)
+    frame_857.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_857.BackgroundTransparency = 0.45
+    frame_857.BorderSizePixel = 0
+    frame_857.ZIndex = 1
+    frame_857.Parent = frame_857
+    local uicorner_264 = Instance.new("UICorner")
+
+    uicorner_264.CornerRadius = UDim.new(1, 0)
+    local v1342 = TweenService:Create(TweenService, {}, TweenInfo.new(14, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_857.Position.X.Scale, 0, 1, 10)
+})
+    local v1343 = v1342:Play()
+    v1342.Completed:Connect(function(r, I, h)
+    local v1 = frame_857.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_234 = Instance.new("Frame")
+
+    frame_234.Size = UDim2.new(0, 2, 0, 4)
+    frame_234.Position = UDim2.new(0.22, 0, 0, -10)
+    frame_234.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_234.BackgroundTransparency = 0.68
+    frame_234.BorderSizePixel = 0
+    frame_234.ZIndex = 1
+    frame_234.Parent = frame_234
+    local uicorner_953 = Instance.new("UICorner")
+
+    uicorner_953.CornerRadius = UDim.new(1, 0)
+    local v1356 = TweenService:Create(TweenService, {}, TweenInfo.new(12, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_234.Position.X.Scale, 0, 1, 10)
+})
+    local v1357 = v1356:Play()
+    v1356.Completed:Connect(function(r, I, h)
+    local v1 = frame_234.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_654 = Instance.new("Frame")
+
+    frame_654.Size = UDim2.new(0, 5, 0, 2)
+    frame_654.Position = UDim2.new(0.8, 0, 0, -10)
+    frame_654.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_654.BackgroundTransparency = 0.57
+    frame_654.BorderSizePixel = 0
+    frame_654.ZIndex = 1
+    frame_654.Parent = frame_654
+    local uicorner_872 = Instance.new("UICorner")
+
+    uicorner_872.CornerRadius = UDim.new(1, 0)
+    local v1370 = TweenService:Create(TweenService, {}, TweenInfo.new(9, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_654.Position.X.Scale, 0, 1, 10)
+})
+    local v1371 = v1370:Play()
+    v1370.Completed:Connect(function(r, I, h)
+    local v1 = frame_654.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_984 = Instance.new("Frame")
+
+    frame_984.Size = UDim2.new(0, 3, 0, 3)
+    frame_984.Position = UDim2.new(0.2, 0, 0, -10)
+    frame_984.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_984.BackgroundTransparency = 0.64
+    frame_984.BorderSizePixel = 0
+    frame_984.ZIndex = 1
+    frame_984.Parent = frame_984
+    local uicorner_107 = Instance.new("UICorner")
+
+    uicorner_107.CornerRadius = UDim.new(1, 0)
+    local v1384 = TweenService:Create(TweenService, {}, TweenInfo.new(13, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_984.Position.X.Scale, 0, 1, 10)
+})
+    local v1385 = v1384:Play()
+    v1384.Completed:Connect(function(r, I, h)
+    local v1 = frame_984.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_882 = Instance.new("Frame")
+
+    frame_882.Size = UDim2.new(0, 5, 0, 2)
+    frame_882.Position = UDim2.new(0.03, 0, 0, -10)
+    frame_882.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_882.BackgroundTransparency = 0.43
+    frame_882.BorderSizePixel = 0
+    frame_882.ZIndex = 1
+    frame_882.Parent = frame_882
+    local uicorner_961 = Instance.new("UICorner")
+
+    uicorner_961.CornerRadius = UDim.new(1, 0)
+    local v1398 = TweenService:Create(TweenService, {}, TweenInfo.new(8, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_882.Position.X.Scale, 0, 1, 10)
+})
+    local v1399 = v1398:Play()
+    v1398.Completed:Connect(function(r, I, h)
+    local v1 = frame_882.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_134 = Instance.new("Frame")
+
+    frame_134.Size = UDim2.new(0, 4, 0, 4)
+    frame_134.Position = UDim2.new(0.93, 0, 0, -10)
+    frame_134.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_134.BackgroundTransparency = 0.62
+    frame_134.BorderSizePixel = 0
+    frame_134.ZIndex = 1
+    frame_134.Parent = frame_134
+    local uicorner_67 = Instance.new("UICorner")
+
+    uicorner_67.CornerRadius = UDim.new(1, 0)
+    local v1412 = TweenService:Create(TweenService, {}, TweenInfo.new(10, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_134.Position.X.Scale, 0, 1, 10)
+})
+    local v1413 = v1412:Play()
+    v1412.Completed:Connect(function(r, I, h)
+    local v1 = frame_134.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_887 = Instance.new("Frame")
+
+    frame_887.Size = UDim2.new(0, 4, 0, 2)
+    frame_887.Position = UDim2.new(0.38, 0, 0, -10)
+    frame_887.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_887.BackgroundTransparency = 0.54
+    frame_887.BorderSizePixel = 0
+    frame_887.ZIndex = 1
+    frame_887.Parent = frame_887
+    local uicorner_235 = Instance.new("UICorner")
+
+    uicorner_235.CornerRadius = UDim.new(1, 0)
+    local v1426 = TweenService:Create(TweenService, {}, TweenInfo.new(12, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_887.Position.X.Scale, 0, 1, 10)
+})
+    local v1427 = v1426:Play()
+    v1426.Completed:Connect(function(r, I, h)
+    local v1 = frame_887.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_553 = Instance.new("Frame")
+
+    frame_553.Size = UDim2.new(0, 5, 0, 4)
+    frame_553.Position = UDim2.new(0.23, 0, 0, -10)
+    frame_553.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_553.BackgroundTransparency = 0.73
+    frame_553.BorderSizePixel = 0
+    frame_553.ZIndex = 1
+    frame_553.Parent = frame_553
+    local uicorner_251 = Instance.new("UICorner")
+
+    uicorner_251.CornerRadius = UDim.new(1, 0)
+    local v1440 = TweenService:Create(TweenService, {}, TweenInfo.new(14, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_553.Position.X.Scale, 0, 1, 10)
+})
+    local v1441 = v1440:Play()
+    v1440.Completed:Connect(function(r, I, h)
+    local v1 = frame_553.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_76 = Instance.new("Frame")
+
+    frame_76.Size = UDim2.new(0, 5, 0, 5)
+    frame_76.Position = UDim2.new(0.16, 0, 0, -10)
+    frame_76.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_76.BackgroundTransparency = 0.73
+    frame_76.BorderSizePixel = 0
+    frame_76.ZIndex = 1
+    frame_76.Parent = frame_76
+    local uicorner_945 = Instance.new("UICorner")
+
+    uicorner_945.CornerRadius = UDim.new(1, 0)
+    local v1454 = TweenService:Create(TweenService, {}, TweenInfo.new(11, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_76.Position.X.Scale, 0, 1, 10)
+})
+    local v1455 = v1454:Play()
+    v1454.Completed:Connect(function(r, I, h)
+    local v1 = frame_76.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_612 = Instance.new("Frame")
+
+    frame_612.Size = UDim2.new(0, 2, 0, 5)
+    frame_612.Position = UDim2.new(0.23, 0, 0, -10)
+    frame_612.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_612.BackgroundTransparency = 0.43
+    frame_612.BorderSizePixel = 0
+    frame_612.ZIndex = 1
+    frame_612.Parent = frame_612
+    local uicorner_373 = Instance.new("UICorner")
+
+    uicorner_373.CornerRadius = UDim.new(1, 0)
+    local v1468 = TweenService:Create(TweenService, {}, TweenInfo.new(12, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_612.Position.X.Scale, 0, 1, 10)
+})
+    local v1469 = v1468:Play()
+    v1468.Completed:Connect(function(r, I, h)
+    local v1 = frame_612.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_899 = Instance.new("Frame")
+
+    frame_899.Size = UDim2.new(0, 4, 0, 3)
+    frame_899.Position = UDim2.new(0.3, 0, 0, -10)
+    frame_899.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_899.BackgroundTransparency = 0.69
+    frame_899.BorderSizePixel = 0
+    frame_899.ZIndex = 1
+    frame_899.Parent = frame_899
+    local uicorner_871 = Instance.new("UICorner")
+
+    uicorner_871.CornerRadius = UDim.new(1, 0)
+    local v1482 = TweenService:Create(TweenService, {}, TweenInfo.new(13, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_899.Position.X.Scale, 0, 1, 10)
+})
+    local v1483 = v1482:Play()
+    v1482.Completed:Connect(function(r, I, h)
+    local v1 = frame_899.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_694 = Instance.new("Frame")
+
+    frame_694.Size = UDim2.new(0, 3, 0, 4)
+    frame_694.Position = UDim2.new(0.62, 0, 0, -10)
+    frame_694.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_694.BackgroundTransparency = 0.58
+    frame_694.BorderSizePixel = 0
+    frame_694.ZIndex = 1
+    frame_694.Parent = frame_694
+    local uicorner_367 = Instance.new("UICorner")
+
+    uicorner_367.CornerRadius = UDim.new(1, 0)
+    local v1496 = TweenService:Create(TweenService, {}, TweenInfo.new(11, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_694.Position.X.Scale, 0, 1, 10)
+})
+    local v1497 = v1496:Play()
+    v1496.Completed:Connect(function(r, I, h)
+    local v1 = frame_694.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_343 = Instance.new("Frame")
+
+    frame_343.Size = UDim2.new(0, 3, 0, 5)
+    frame_343.Position = UDim2.new(0.28, 0, 0, -10)
+    frame_343.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_343.BackgroundTransparency = 0.48
+    frame_343.BorderSizePixel = 0
+    frame_343.ZIndex = 1
+    frame_343.Parent = frame_343
+    local uicorner_248 = Instance.new("UICorner")
+
+    uicorner_248.CornerRadius = UDim.new(1, 0)
+    local v1510 = TweenService:Create(TweenService, {}, TweenInfo.new(10, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_343.Position.X.Scale, 0, 1, 10)
+})
+    local v1511 = v1510:Play()
+    v1510.Completed:Connect(function(r, I, h)
+    local v1 = frame_343.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_276 = Instance.new("Frame")
+
+    frame_276.Size = UDim2.new(0, 3, 0, 2)
+    frame_276.Position = UDim2.new(0.37, 0, 0, -10)
+    frame_276.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_276.BackgroundTransparency = 0.66
+    frame_276.BorderSizePixel = 0
+    frame_276.ZIndex = 1
+    frame_276.Parent = frame_276
+    local uicorner_581 = Instance.new("UICorner")
+
+    uicorner_581.CornerRadius = UDim.new(1, 0)
+    local v1524 = TweenService:Create(TweenService, {}, TweenInfo.new(10, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_276.Position.X.Scale, 0, 1, 10)
+})
+    local v1525 = v1524:Play()
+    v1524.Completed:Connect(function(r, I, h)
+    local v1 = frame_276.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_161 = Instance.new("Frame")
+
+    frame_161.Size = UDim2.new(0, 4, 0, 5)
+    frame_161.Position = UDim2.new(0.98, 0, 0, -10)
+    frame_161.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_161.BackgroundTransparency = 0.6
+    frame_161.BorderSizePixel = 0
+    frame_161.ZIndex = 1
+    frame_161.Parent = frame_161
+    local uicorner_601 = Instance.new("UICorner")
+
+    uicorner_601.CornerRadius = UDim.new(1, 0)
+    local v1538 = TweenService:Create(TweenService, {}, TweenInfo.new(10, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_161.Position.X.Scale, 0, 1, 10)
+})
+    local v1539 = v1538:Play()
+    v1538.Completed:Connect(function(r, I, h)
+    local v1 = frame_161.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_871 = Instance.new("Frame")
+
+    frame_871.Size = UDim2.new(0, 5, 0, 5)
+    frame_871.Position = UDim2.new(0.39, 0, 0, -10)
+    frame_871.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_871.BackgroundTransparency = 0.51
+    frame_871.BorderSizePixel = 0
+    frame_871.ZIndex = 1
+    frame_871.Parent = frame_871
+    local uicorner_330 = Instance.new("UICorner")
+
+    uicorner_330.CornerRadius = UDim.new(1, 0)
+    local v1552 = TweenService:Create(TweenService, {}, TweenInfo.new(15, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_871.Position.X.Scale, 0, 1, 10)
+})
+    local v1553 = v1552:Play()
+    v1552.Completed:Connect(function(r, I, h)
+    local v1 = frame_871.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_614 = Instance.new("Frame")
+
+    frame_614.Size = UDim2.new(0, 5, 0, 5)
+    frame_614.Position = UDim2.new(0.85, 0, 0, -10)
+    frame_614.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_614.BackgroundTransparency = 0.4
+    frame_614.BorderSizePixel = 0
+    frame_614.ZIndex = 1
+    frame_614.Parent = frame_614
+    local uicorner_287 = Instance.new("UICorner")
+
+    uicorner_287.CornerRadius = UDim.new(1, 0)
+    local v1566 = TweenService:Create(TweenService, {}, TweenInfo.new(13, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_614.Position.X.Scale, 0, 1, 10)
+})
+    local v1567 = v1566:Play()
+    v1566.Completed:Connect(function(r, I, h)
+    local v1 = frame_614.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_638 = Instance.new("Frame")
+
+    frame_638.Size = UDim2.new(0, 5, 0, 4)
+    frame_638.Position = UDim2.new(0.36, 0, 0, -10)
+    frame_638.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_638.BackgroundTransparency = 0.52
+    frame_638.BorderSizePixel = 0
+    frame_638.ZIndex = 1
+    frame_638.Parent = frame_638
+    local uicorner_995 = Instance.new("UICorner")
+
+    uicorner_995.CornerRadius = UDim.new(1, 0)
+    local v1580 = TweenService:Create(TweenService, {}, TweenInfo.new(15, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_638.Position.X.Scale, 0, 1, 10)
+})
+    local v1581 = v1580:Play()
+    v1580.Completed:Connect(function(r, I, h)
+    local v1 = frame_638.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_703 = Instance.new("Frame")
+
+    frame_703.Size = UDim2.new(0, 5, 0, 3)
+    frame_703.Position = UDim2.new(0.28, 0, 0, -10)
+    frame_703.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_703.BackgroundTransparency = 0.58
+    frame_703.BorderSizePixel = 0
+    frame_703.ZIndex = 1
+    frame_703.Parent = frame_703
+    local uicorner_818 = Instance.new("UICorner")
+
+    uicorner_818.CornerRadius = UDim.new(1, 0)
+    local v1594 = TweenService:Create(TweenService, {}, TweenInfo.new(12, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_703.Position.X.Scale, 0, 1, 10)
+})
+    local v1595 = v1594:Play()
+    v1594.Completed:Connect(function(r, I, h)
+    local v1 = frame_703.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_762 = Instance.new("Frame")
+
+    frame_762.Size = UDim2.new(0, 3, 0, 5)
+    frame_762.Position = UDim2.new(0.07, 0, 0, -10)
+    frame_762.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_762.BackgroundTransparency = 0.68
+    frame_762.BorderSizePixel = 0
+    frame_762.ZIndex = 1
+    frame_762.Parent = frame_762
+    local uicorner_764 = Instance.new("UICorner")
+
+    uicorner_764.CornerRadius = UDim.new(1, 0)
+    local v1608 = TweenService:Create(TweenService, {}, TweenInfo.new(13, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_762.Position.X.Scale, 0, 1, 10)
+})
+    local v1609 = v1608:Play()
+    v1608.Completed:Connect(function(r, I, h)
+    local v1 = frame_762.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_517 = Instance.new("Frame")
+
+    frame_517.Size = UDim2.new(0, 4, 0, 2)
+    frame_517.Position = UDim2.new(0.52, 0, 0, -10)
+    frame_517.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_517.BackgroundTransparency = 0.74
+    frame_517.BorderSizePixel = 0
+    frame_517.ZIndex = 1
+    frame_517.Parent = frame_517
+    local uicorner_921 = Instance.new("UICorner")
+
+    uicorner_921.CornerRadius = UDim.new(1, 0)
+    local v1622 = TweenService:Create(TweenService, {}, TweenInfo.new(14, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_517.Position.X.Scale, 0, 1, 10)
+})
+    local v1623 = v1622:Play()
+    v1622.Completed:Connect(function(r, I, h)
+    local v1 = frame_517.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_679 = Instance.new("Frame")
+
+    frame_679.Size = UDim2.new(0, 3, 0, 5)
+    frame_679.Position = UDim2.new(0.01, 0, 0, -10)
+    frame_679.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_679.BackgroundTransparency = 0.55
+    frame_679.BorderSizePixel = 0
+    frame_679.ZIndex = 1
+    frame_679.Parent = frame_679
+    local uicorner_932 = Instance.new("UICorner")
+
+    uicorner_932.CornerRadius = UDim.new(1, 0)
+    local v1636 = TweenService:Create(TweenService, {}, TweenInfo.new(12, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_679.Position.X.Scale, 0, 1, 10)
+})
+    local v1637 = v1636:Play()
+    v1636.Completed:Connect(function(r, I, h)
+    local v1 = frame_679.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_838 = Instance.new("Frame")
+
+    frame_838.Size = UDim2.new(0, 5, 0, 3)
+    frame_838.Position = UDim2.new(0.34, 0, 0, -10)
+    frame_838.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_838.BackgroundTransparency = 0.69
+    frame_838.BorderSizePixel = 0
+    frame_838.ZIndex = 1
+    frame_838.Parent = frame_838
+    local uicorner_974 = Instance.new("UICorner")
+
+    uicorner_974.CornerRadius = UDim.new(1, 0)
+    local v1650 = TweenService:Create(TweenService, {}, TweenInfo.new(13, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_838.Position.X.Scale, 0, 1, 10)
+})
+    local v1651 = v1650:Play()
+    v1650.Completed:Connect(function(r, I, h)
+    local v1 = frame_838.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_425 = Instance.new("Frame")
+
+    frame_425.Size = UDim2.new(0, 3, 0, 4)
+    frame_425.Position = UDim2.new(0.2, 0, 0, -10)
+    frame_425.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_425.BackgroundTransparency = 0.49
+    frame_425.BorderSizePixel = 0
+    frame_425.ZIndex = 1
+    frame_425.Parent = frame_425
+    local uicorner_369 = Instance.new("UICorner")
+
+    uicorner_369.CornerRadius = UDim.new(1, 0)
+    local v1664 = TweenService:Create(TweenService, {}, TweenInfo.new(12, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_425.Position.X.Scale, 0, 1, 10)
+})
+    local v1665 = v1664:Play()
+    v1664.Completed:Connect(function(r, I, h)
+    local v1 = frame_425.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_28 = Instance.new("Frame")
+
+    frame_28.Size = UDim2.new(0, 5, 0, 3)
+    frame_28.Position = UDim2.new(0.98, 0, 0, -10)
+    frame_28.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_28.BackgroundTransparency = 0.67
+    frame_28.BorderSizePixel = 0
+    frame_28.ZIndex = 1
+    frame_28.Parent = frame_28
+    local uicorner_90 = Instance.new("UICorner")
+
+    uicorner_90.CornerRadius = UDim.new(1, 0)
+    local v1678 = TweenService:Create(TweenService, {}, TweenInfo.new(12, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_28.Position.X.Scale, 0, 1, 10)
+})
+    local v1679 = v1678:Play()
+    v1678.Completed:Connect(function(r, I, h)
+    local v1 = frame_28.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_530 = Instance.new("Frame")
+
+    frame_530.Size = UDim2.new(0, 4, 0, 3)
+    frame_530.Position = UDim2.new(0.97, 0, 0, -10)
+    frame_530.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_530.BackgroundTransparency = 0.55
+    frame_530.BorderSizePixel = 0
+    frame_530.ZIndex = 1
+    frame_530.Parent = frame_530
+    local uicorner_970 = Instance.new("UICorner")
+
+    uicorner_970.CornerRadius = UDim.new(1, 0)
+    local v1692 = TweenService:Create(TweenService, {}, TweenInfo.new(8, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_530.Position.X.Scale, 0, 1, 10)
+})
+    local v1693 = v1692:Play()
+    v1692.Completed:Connect(function(r, I, h)
+    local v1 = frame_530.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_962 = Instance.new("Frame")
+
+    frame_962.Size = UDim2.new(0, 4, 0, 4)
+    frame_962.Position = UDim2.new(0.78, 0, 0, -10)
+    frame_962.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_962.BackgroundTransparency = 0.57
+    frame_962.BorderSizePixel = 0
+    frame_962.ZIndex = 1
+    frame_962.Parent = frame_962
+    local uicorner_344 = Instance.new("UICorner")
+
+    uicorner_344.CornerRadius = UDim.new(1, 0)
+    local v1706 = TweenService:Create(TweenService, {}, TweenInfo.new(10, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_962.Position.X.Scale, 0, 1, 10)
+})
+    local v1707 = v1706:Play()
+    v1706.Completed:Connect(function(r, I, h)
+    local v1 = frame_962.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_841 = Instance.new("Frame")
+
+    frame_841.Size = UDim2.new(0, 5, 0, 2)
+    frame_841.Position = UDim2.new(0.1, 0, 0, -10)
+    frame_841.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_841.BackgroundTransparency = 0.52
+    frame_841.BorderSizePixel = 0
+    frame_841.ZIndex = 1
+    frame_841.Parent = frame_841
+    local uicorner_726 = Instance.new("UICorner")
+
+    uicorner_726.CornerRadius = UDim.new(1, 0)
+    local v1720 = TweenService:Create(TweenService, {}, TweenInfo.new(15, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_841.Position.X.Scale, 0, 1, 10)
+})
+    local v1721 = v1720:Play()
+    v1720.Completed:Connect(function(r, I, h)
+    local v1 = frame_841.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_563 = Instance.new("Frame")
+
+    frame_563.Size = UDim2.new(0, 2, 0, 3)
+    frame_563.Position = UDim2.new(0.32, 0, 0, -10)
+    frame_563.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_563.BackgroundTransparency = 0.49
+    frame_563.BorderSizePixel = 0
+    frame_563.ZIndex = 1
+    frame_563.Parent = frame_563
+    local uicorner_913 = Instance.new("UICorner")
+
+    uicorner_913.CornerRadius = UDim.new(1, 0)
+    local v1734 = TweenService:Create(TweenService, {}, TweenInfo.new(14, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_563.Position.X.Scale, 0, 1, 10)
+})
+    local v1735 = v1734:Play()
+    v1734.Completed:Connect(function(r, I, h)
+    local v1 = frame_563.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_417 = Instance.new("Frame")
+
+    frame_417.Size = UDim2.new(0, 2, 0, 5)
+    frame_417.Position = UDim2.new(0.86, 0, 0, -10)
+    frame_417.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_417.BackgroundTransparency = 0.46
+    frame_417.BorderSizePixel = 0
+    frame_417.ZIndex = 1
+    frame_417.Parent = frame_417
+    local uicorner_864 = Instance.new("UICorner")
+
+    uicorner_864.CornerRadius = UDim.new(1, 0)
+    local v1748 = TweenService:Create(TweenService, {}, TweenInfo.new(9, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_417.Position.X.Scale, 0, 1, 10)
+})
+    local v1749 = v1748:Play()
+    v1748.Completed:Connect(function(r, I, h)
+    local v1 = frame_417.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_388 = Instance.new("Frame")
+
+    frame_388.Size = UDim2.new(0, 4, 0, 5)
+    frame_388.Position = UDim2.new(0.89, 0, 0, -10)
+    frame_388.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_388.BackgroundTransparency = 0.43
+    frame_388.BorderSizePixel = 0
+    frame_388.ZIndex = 1
+    frame_388.Parent = frame_388
+    local uicorner_260 = Instance.new("UICorner")
+
+    uicorner_260.CornerRadius = UDim.new(1, 0)
+    local v1762 = TweenService:Create(TweenService, {}, TweenInfo.new(14, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_388.Position.X.Scale, 0, 1, 10)
+})
+    local v1763 = v1762:Play()
+    v1762.Completed:Connect(function(r, I, h)
+    local v1 = frame_388.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_248 = Instance.new("Frame")
+
+    frame_248.Size = UDim2.new(0, 5, 0, 2)
+    frame_248.Position = UDim2.new(0.6, 0, 0, -10)
+    frame_248.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_248.BackgroundTransparency = 0.63
+    frame_248.BorderSizePixel = 0
+    frame_248.ZIndex = 1
+    frame_248.Parent = frame_248
+    local uicorner_914 = Instance.new("UICorner")
+
+    uicorner_914.CornerRadius = UDim.new(1, 0)
+    local v1776 = TweenService:Create(TweenService, {}, TweenInfo.new(15, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_248.Position.X.Scale, 0, 1, 10)
+})
+    local v1777 = v1776:Play()
+    v1776.Completed:Connect(function(r, I, h)
+    local v1 = frame_248.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_90 = Instance.new("Frame")
+
+    frame_90.Size = UDim2.new(0, 3, 0, 4)
+    frame_90.Position = UDim2.new(0.35, 0, 0, -10)
+    frame_90.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_90.BackgroundTransparency = 0.49
+    frame_90.BorderSizePixel = 0
+    frame_90.ZIndex = 1
+    frame_90.Parent = frame_90
+    local uicorner_301 = Instance.new("UICorner")
+
+    uicorner_301.CornerRadius = UDim.new(1, 0)
+    local v1790 = TweenService:Create(TweenService, {}, TweenInfo.new(9, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_90.Position.X.Scale, 0, 1, 10)
+})
+    local v1791 = v1790:Play()
+    v1790.Completed:Connect(function(r, I, h)
+    local v1 = frame_90.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_511 = Instance.new("Frame")
+
+    frame_511.Size = UDim2.new(0, 5, 0, 4)
+    frame_511.Position = UDim2.new(0.69, 0, 0, -10)
+    frame_511.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_511.BackgroundTransparency = 0.67
+    frame_511.BorderSizePixel = 0
+    frame_511.ZIndex = 1
+    frame_511.Parent = frame_511
+    local uicorner_655 = Instance.new("UICorner")
+
+    uicorner_655.CornerRadius = UDim.new(1, 0)
+    local v1804 = TweenService:Create(TweenService, {}, TweenInfo.new(14, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_511.Position.X.Scale, 0, 1, 10)
+})
+    local v1805 = v1804:Play()
+    v1804.Completed:Connect(function(r, I, h)
+    local v1 = frame_511.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_404 = Instance.new("Frame")
+
+    frame_404.Size = UDim2.new(0, 4, 0, 2)
+    frame_404.Position = UDim2.new(0.5, 0, 0, -10)
+    frame_404.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_404.BackgroundTransparency = 0.4
+    frame_404.BorderSizePixel = 0
+    frame_404.ZIndex = 1
+    frame_404.Parent = frame_404
+    local uicorner_855 = Instance.new("UICorner")
+
+    uicorner_855.CornerRadius = UDim.new(1, 0)
+    local v1818 = TweenService:Create(TweenService, {}, TweenInfo.new(11, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_404.Position.X.Scale, 0, 1, 10)
+})
+    local v1819 = v1818:Play()
+    v1818.Completed:Connect(function(r, I, h)
+    local v1 = frame_404.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_790 = Instance.new("Frame")
+
+    frame_790.Size = UDim2.new(0, 3, 0, 5)
+    frame_790.Position = UDim2.new(0.45, 0, 0, -10)
+    frame_790.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_790.BackgroundTransparency = 0.53
+    frame_790.BorderSizePixel = 0
+    frame_790.ZIndex = 1
+    frame_790.Parent = frame_790
+    local uicorner_846 = Instance.new("UICorner")
+
+    uicorner_846.CornerRadius = UDim.new(1, 0)
+    local v1832 = TweenService:Create(TweenService, {}, TweenInfo.new(13, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_790.Position.X.Scale, 0, 1, 10)
+})
+    local v1833 = v1832:Play()
+    v1832.Completed:Connect(function(r, I, h)
+    local v1 = frame_790.Destroy({})
+end)
+    task.wait(0.28)
+    local frame_190 = Instance.new("Frame")
+
+    frame_190.Size = UDim2.new(0, 2, 0, 5)
+    frame_190.Position = UDim2.new(0.45, 0, 0, -10)
+    frame_190.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+    frame_190.BackgroundTransparency = 0.58
+    frame_190.BorderSizePixel = 0
+    frame_190.ZIndex = 1
+    frame_190.Parent = frame_190
+    local uicorner_973 = Instance.new("UICorner")
+
+    uicorner_973.CornerRadius = UDim.new(1, 0)
+    local v1846 = TweenService:Create(TweenService, {}, TweenInfo.new(8, Enum.EasingStyle.Linear), {
+    Position = UDim2.new(frame_190.Position.X.Scale, 0, 1, 10)
+})
+    local v1847 = v1846:Play()
+    v1846.Completed:Connect(function(r, I, h)
+    local v1 = frame_190.Destroy({})
+end)
+end)
+local frame_884 = Instance.new("Frame")
+
+frame_884.Size = UDim2.new(0, 2, 0, 28)
+frame_884.Position = UDim2.new(0, 10, 0, 16)
+frame_884.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+frame_884.BorderSizePixel = 0
+frame_884.ZIndex = 2
+local frame_649 = Instance.new("Frame")
+
+frame_649.Size = UDim2.new(0, 2, 0, 28)
+frame_649.Position = UDim2.new(0, 288, 0, 16)
+frame_649.BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+frame_649.BorderSizePixel = 0
+frame_649.ZIndex = 2
+local frame_721 = Instance.new("Frame")
+
+frame_721.Size = UDim2.new(1, 0, 0, 48)
+frame_721.BackgroundColor3 = Color3.fromRGB(18, 14, 30)
+frame_721.BorderSizePixel = 0
+frame_721.ZIndex = 2
+local uicorner_659 = Instance.new("UICorner")
+
+uicorner_659.CornerRadius = UDim.new(0, 20)
+local frame_305 = Instance.new("Frame")
+
+frame_305.Size = UDim2.new(1, 0, 0, 20)
+frame_305.Position = UDim2.new(0, 0, 1, -20)
+frame_305.BackgroundColor3 = Color3.fromRGB(18, 14, 30)
+frame_305.BorderSizePixel = 0
+frame_305.ZIndex = 2
+local textlabel_555 = Instance.new("TextLabel")
+
+textlabel_555.Size = UDim2.new(1, -80, 1, 0)
+textlabel_555.Position = UDim2.new(0, 15, 0, 0)
+textlabel_555.Text = "chilp semi tp"
+textlabel_555.TextColor3 = Color3.fromRGB(200, 140, 255)
+textlabel_555.Font = Font.GothamBold
+textlabel_555.TextSize = 20
+textlabel_555.TextXAlignment = Enum.TextXAlignment.Left
+textlabel_555.BackgroundTransparency = 1
+textlabel_555.ZIndex = 3
+local imagelabel_821 = Instance.new("ImageLabel")
+
+imagelabel_821.Size = UDim2.new(1, 40, 1, 40)
+imagelabel_821.Position = UDim2.new(0, -20, 0, -20)
+imagelabel_821.BackgroundTransparency = 1
+imagelabel_821.Image = "rbxassetid://5028822351"
+imagelabel_821.ImageColor3 = Color3.fromRGB(160, 80, 255)
+imagelabel_821.ImageTransparency = 0.5
+imagelabel_821.ZIndex = 2
+local textbutton_708 = Instance.new("TextButton")
+
+textbutton_708.Size = UDim2.new(0, 26, 0, 26)
+textbutton_708.Position = UDim2.new(1, -36, 0.5, -13)
+textbutton_708.BackgroundColor3 = Color3.fromRGB(22, 16, 36)
+textbutton_708.Text = "X"
+textbutton_708.TextColor3 = Color3.fromRGB(255, 255, 255)
+textbutton_708.Font = Font.GothamBold
+textbutton_708.TextSize = 14
+textbutton_708.AutoButtonColor = false
+textbutton_708.ZIndex = 3
+local uicorner_304 = Instance.new("UICorner")
+
+uicorner_304.CornerRadius = UDim.new(0, 8)
+textbutton_708.MouseEnter:Connect(function(r)
+    local v1 = TweenService:Create(TweenService, {}, TweenInfo.new(0.2), {
+    BackgroundColor3 = Color3.fromRGB(231, 76, 60)
+})
+    local v2 = v1:Play()
+end)
+textbutton_708.MouseLeave:Connect(function(arg1, arg2)
+    local v1 = TweenService:Create(TweenService, {}, TweenInfo.new(0.2), {
+    BackgroundColor3 = Color3.fromRGB(22, 16, 36)
+})
+    local v2 = v1:Play()
+end)
+textbutton_708.MouseButton1Click:Connect(function(r, I, h, Q, E)
+    local v1 = screengui_427.Destroy({})
+end)
+local textbutton_869 = Instance.new("TextButton")
+
+textbutton_869.Size = UDim2.new(0, 26, 0, 26)
+textbutton_869.Position = UDim2.new(1, -68, 0.5, -13)
+textbutton_869.BackgroundColor3 = Color3.fromRGB(22, 16, 36)
+textbutton_869.Text = "-"
+textbutton_869.TextColor3 = Color3.fromRGB(255, 255, 255)
+textbutton_869.Font = Font.GothamBold
+textbutton_869.TextSize = 18
+textbutton_869.AutoButtonColor = false
+textbutton_869.ZIndex = 3
+local uicorner_204 = Instance.new("UICorner")
+
+uicorner_204.CornerRadius = UDim.new(0, 8)
+textbutton_869.MouseEnter:Connect(function(r)
+    local v1 = TweenService:Create(TweenService, {}, TweenInfo.new(0.2), {
+    BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+})
+    local v2 = v1:Play()
+end)
+textbutton_869.MouseLeave:Connect(function(r)
+    local v1 = TweenService:Create(TweenService, {}, TweenInfo.new(0.2), {
+    BackgroundColor3 = Color3.fromRGB(22, 16, 36)
+})
+    local v2 = v1:Play()
+end)
+textbutton_869.MouseButton1Click:Connect(function(r, I, h, Q, E)
+    local v1 = TweenService:Create(TweenService, {}, TweenInfo.new(0.25, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), {
+    Size = UDim2.new(0, 300, 0, 48)
+})
+    local v2 = v1:Play()
+    textbutton_869.Text = "+"
+end)
+local frame_311 = Instance.new("Frame")
+
+frame_311.Size = UDim2.new(1, -28, 1, -62)
+frame_311.Position = UDim2.new(0, 14, 0, 54)
+frame_311.BackgroundTransparency = 1
+frame_311.ZIndex = 2
+local frame_725 = Instance.new("Frame")
+
+frame_725.Size = UDim2.new(1, 0, 0, 32)
+frame_725.Position = UDim2.new(0, 0, 0, 0)
+frame_725.BackgroundColor3 = Color3.fromRGB(22, 16, 36)
+frame_725.BorderSizePixel = 0
+frame_725.ZIndex = 2
+local uicorner_632 = Instance.new("UICorner")
+
+uicorner_632.CornerRadius = UDim.new(0, 10)
+local uistroke_566 = Instance.new("UIStroke")
+
+uistroke_566.Thickness = 1.5
+uistroke_566.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+uistroke_566.Color = Color3.fromRGB(160, 80, 255)
+local uigradient_515 = Instance.new("UIGradient")
+
+uigradient_515.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(160, 80, 255)),
+    ColorSequenceKeypoint.new(0.5, Color3.fromRGB(210, 150, 255)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(160, 80, 255))
+})
+RunService.RenderStepped:Connect(function(arg1, arg2)
+    local calc_1 = (uigradient_515.Rotation + "2")
+    local calc_2 = (calc_1 % 360)
+    uigradient_515.Rotation = calc_2
+end)
+local textlabel_97 = Instance.new("TextLabel")
+
+textlabel_97.Size = UDim2.new(1, -55, 1, 0)
+textlabel_97.Position = UDim2.new(0, 12, 0, 0)
+textlabel_97.BackgroundTransparency = 1
+textlabel_97.Text = "Half Tp"
+textlabel_97.TextColor3 = Color3.fromRGB(255, 255, 255)
+textlabel_97.TextSize = 12
+textlabel_97.Font = Font.GothamMedium
+textlabel_97.TextXAlignment = Enum.TextXAlignment.Left
+textlabel_97.ZIndex = 3
+local textbutton_425 = Instance.new("TextButton")
+
+textbutton_425.Size = UDim2.new(0, 40, 0, 20)
+textbutton_425.Position = UDim2.new(1, -48, 0.5, -10)
+textbutton_425.BackgroundColor3 = Color3.fromRGB(50, 40, 70)
+textbutton_425.Text = ""
+textbutton_425.AutoButtonColor = false
+textbutton_425.ZIndex = 3
+local uicorner_966 = Instance.new("UICorner")
+
+uicorner_966.CornerRadius = UDim.new(1, 0)
+local frame_474 = Instance.new("Frame")
+
+frame_474.Size = UDim2.new(0, 16, 0, 16)
+frame_474.Position = UDim2.new(0, 2, 0.5, -8)
+frame_474.BackgroundColor3 = Color3.fromRGB(170, 140, 210)
+frame_474.ZIndex = 4
+local uicorner_272 = Instance.new("UICorner")
+
+uicorner_272.CornerRadius = UDim.new(1, 0)
+textbutton_425.MouseButton1Click:Connect(function(r, I, h, Q)
+    local v1 = TweenService:Create(TweenService, {}, TweenInfo.new(0.15), {
+    Position = UDim2.new(1, -18, 0.5, -8)
+})
+    local v2 = v1:Play()
+    local v3 = TweenService:Create(TweenService, {}, TweenInfo.new(0.15), {
+    BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+})
+    local v4 = v3:Play()
+    local v5 = TweenService:Create(TweenService, {}, TweenInfo.new(0.15), {
+    BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+})
+    local v6 = v5:Play()
+end)
+local frame_642 = Instance.new("Frame")
+
+frame_642.Size = UDim2.new(1, 0, 0, 32)
+frame_642.Position = UDim2.new(0, 0, 0, 36)
+frame_642.BackgroundColor3 = Color3.fromRGB(22, 16, 36)
+frame_642.BorderSizePixel = 0
+frame_642.ZIndex = 2
+local uicorner_942 = Instance.new("UICorner")
+
+uicorner_942.CornerRadius = UDim.new(0, 10)
+local uistroke_461 = Instance.new("UIStroke")
+
+uistroke_461.Thickness = 1.5
+uistroke_461.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+uistroke_461.Color = Color3.fromRGB(160, 80, 255)
+local uigradient_861 = Instance.new("UIGradient")
+
+uigradient_861.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(160, 80, 255)),
+    ColorSequenceKeypoint.new(0.5, Color3.fromRGB(210, 150, 255)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(160, 80, 255))
+})
+RunService.RenderStepped:Connect(function(arg1, arg2)
+    local calc_1 = (uigradient_861.Rotation + "2")
+    local calc_2 = (calc_1 % 360)
+    uigradient_861.Rotation = calc_2
+end)
+local textlabel_765 = Instance.new("TextLabel")
+
+textlabel_765.Size = UDim2.new(1, -55, 1, 0)
+textlabel_765.Position = UDim2.new(0, 12, 0, 0)
+textlabel_765.BackgroundTransparency = 1
+textlabel_765.Text = "Auto Potion"
+textlabel_765.TextColor3 = Color3.fromRGB(255, 255, 255)
+textlabel_765.TextSize = 12
+textlabel_765.Font = Font.GothamMedium
+textlabel_765.TextXAlignment = Enum.TextXAlignment.Left
+textlabel_765.ZIndex = 3
+local textbutton_908 = Instance.new("TextButton")
+
+textbutton_908.Size = UDim2.new(0, 40, 0, 20)
+textbutton_908.Position = UDim2.new(1, -48, 0.5, -10)
+textbutton_908.BackgroundColor3 = Color3.fromRGB(50, 40, 70)
+textbutton_908.Text = ""
+textbutton_908.AutoButtonColor = false
+textbutton_908.ZIndex = 3
+local uicorner_382 = Instance.new("UICorner")
+
+uicorner_382.CornerRadius = UDim.new(1, 0)
+local frame_738 = Instance.new("Frame")
+
+frame_738.Size = UDim2.new(0, 16, 0, 16)
+frame_738.Position = UDim2.new(0, 2, 0.5, -8)
+frame_738.BackgroundColor3 = Color3.fromRGB(170, 140, 210)
+frame_738.ZIndex = 4
+local uicorner_30 = Instance.new("UICorner")
+
+uicorner_30.CornerRadius = UDim.new(1, 0)
+textbutton_908.MouseButton1Click:Connect(function(r, I, h, Q)
+    local v1 = TweenService:Create(TweenService, {}, TweenInfo.new(0.15), {
+    Position = UDim2.new(1, -18, 0.5, -8)
+})
+    local v2 = v1:Play()
+    local v3 = TweenService:Create(TweenService, {}, TweenInfo.new(0.15), {
+    BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+})
+    local v4 = v3:Play()
+    local v5 = TweenService:Create(TweenService, {}, TweenInfo.new(0.15), {
+    BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+})
+    local v6 = v5:Play()
+    env.AutoPotion = true
+end)
+local frame_412 = Instance.new("Frame")
+
+frame_412.Size = UDim2.new(1, 0, 0, 32)
+frame_412.Position = UDim2.new(0, 0, 0, 72)
+frame_412.BackgroundColor3 = Color3.fromRGB(22, 16, 36)
+frame_412.BorderSizePixel = 0
+frame_412.ZIndex = 2
+local uicorner_622 = Instance.new("UICorner")
+
+uicorner_622.CornerRadius = UDim.new(0, 10)
+local uistroke_678 = Instance.new("UIStroke")
+
+uistroke_678.Thickness = 1.5
+uistroke_678.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+uistroke_678.Color = Color3.fromRGB(160, 80, 255)
+local uigradient_134 = Instance.new("UIGradient")
+
+uigradient_134.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(160, 80, 255)),
+    ColorSequenceKeypoint.new(0.5, Color3.fromRGB(210, 150, 255)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(160, 80, 255))
+})
+RunService.RenderStepped:Connect(function(arg1, arg2)
+    local calc_1 = (uigradient_134.Rotation + "2")
+    local calc_2 = (calc_1 % 360)
+    uigradient_134.Rotation = calc_2
+end)
+local textlabel_282 = Instance.new("TextLabel")
+
+textlabel_282.Size = UDim2.new(1, -55, 1, 0)
+textlabel_282.Position = UDim2.new(0, 12, 0, 0)
+textlabel_282.BackgroundTransparency = 1
+textlabel_282.Text = "Speed After Steal"
+textlabel_282.TextColor3 = Color3.fromRGB(255, 255, 255)
+textlabel_282.TextSize = 12
+textlabel_282.Font = Font.GothamMedium
+textlabel_282.TextXAlignment = Enum.TextXAlignment.Left
+textlabel_282.ZIndex = 3
+local textbutton_983 = Instance.new("TextButton")
+
+textbutton_983.Size = UDim2.new(0, 40, 0, 20)
+textbutton_983.Position = UDim2.new(1, -48, 0.5, -10)
+textbutton_983.BackgroundColor3 = Color3.fromRGB(50, 40, 70)
+textbutton_983.Text = ""
+textbutton_983.AutoButtonColor = false
+textbutton_983.ZIndex = 3
+local uicorner_689 = Instance.new("UICorner")
+
+uicorner_689.CornerRadius = UDim.new(1, 0)
+local frame_104 = Instance.new("Frame")
+
+frame_104.Size = UDim2.new(0, 16, 0, 16)
+frame_104.Position = UDim2.new(0, 2, 0.5, -8)
+frame_104.BackgroundColor3 = Color3.fromRGB(170, 140, 210)
+frame_104.ZIndex = 4
+local uicorner_691 = Instance.new("UICorner")
+
+uicorner_691.CornerRadius = UDim.new(1, 0)
+textbutton_983.MouseButton1Click:Connect(function(r, I, h, Q)
+    local v1 = TweenService:Create(TweenService, {}, TweenInfo.new(0.15), {
+    Position = UDim2.new(1, -18, 0.5, -8)
+})
+    local v2 = v1:Play()
+    local v3 = TweenService:Create(TweenService, {}, TweenInfo.new(0.15), {
+    BackgroundColor3 = Color3.fromRGB(160, 80, 255)
+})
+    local v4 = v3:Play()
+    local v5 = TweenService:Create(TweenService, {}, TweenInfo.new(0.15), {
+    BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+})
+    local v6 = v5:Play()
+    RunService.Stepped:Connect(function(r, I)
+    local v1 = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid")
+    local v2 = game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+    local v3 = v1:GetState()
+    local _4 =  0 < v1.MoveDirection.Magnitude
+    local calc_5 = (v1.MoveDirection.X * 29.3)
+    local calc_6 = (v1.MoveDirection.Z * 29.3)
+    v2.AssemblyLinearVelocity = Vector3.new(calc_5, v2.AssemblyLinearVelocity.Y, calc_6)
+end)
+end)
+local textbutton_992 = Instance.new("TextButton")
+
+textbutton_992.Size = UDim2.new(1, 0, 0, 36)
+textbutton_992.Position = UDim2.new(0, 0, 0, 116)
+textbutton_992.BackgroundColor3 = Color3.fromRGB(22, 16, 36)
+textbutton_992.Text = ""
+textbutton_992.AutoButtonColor = false
+textbutton_992.ZIndex = 2
+local uicorner_972 = Instance.new("UICorner")
+
+uicorner_972.CornerRadius = UDim.new(0, 12)
+local uistroke_894 = Instance.new("UIStroke")
+
+uistroke_894.Thickness = 1.5
+uistroke_894.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+uistroke_894.Color = Color3.fromRGB(160, 80, 255)
+local uigradient_304 = Instance.new("UIGradient")
+
+uigradient_304.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(160, 80, 255)),
+    ColorSequenceKeypoint.new(0.5, Color3.fromRGB(210, 150, 255)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(160, 80, 255))
+})
+RunService.RenderStepped:Connect(function(arg1, arg2)
+    local calc_1 = (uigradient_304.Rotation + "2")
+    local calc_2 = (calc_1 % 360)
+    uigradient_304.Rotation = calc_2
+end)
+local textlabel_697 = Instance.new("TextLabel")
+
+textlabel_697.Size = UDim2.new(1, 0, 1, 0)
+textlabel_697.BackgroundTransparency = 1
+textlabel_697.Text = "SPAM AP NEAREST"
+textlabel_697.TextColor3 = Color3.fromRGB(255, 255, 255)
+textlabel_697.Font = Font.GothamBold
+textlabel_697.TextSize = 13
+textlabel_697.ZIndex = 3
+textbutton_992.MouseEnter:Connect(function(r, I, h, Q)
+    local v1 = TweenService:Create(TweenService, {}, TweenInfo.new(0.2, Enum.EasingStyle.Quad), {
+    BackgroundColor3 = Color3.fromRGB(35, 24, 55)
+})
+    local v2 = v1:Play()
+end)
+textbutton_992.MouseLeave:Connect(function(r, I, h, Q, E)
+    local v1 = TweenService:Create(TweenService, {}, TweenInfo.new(0.2, Enum.EasingStyle.Quad), {
+    BackgroundColor3 = Color3.fromRGB(22, 16, 36)
+})
+    local v2 = v1:Play()
+end)
+textbutton_992.MouseButton1Click:Connect(function() --[[ No debug info available. ]] end)
+textlabel_697.Parent.MouseButton1Click:Connect(function(arg1, arg2)
+    local v1 = game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+    local v2 = Players:GetPlayers()
+    textlabel_697.Text = "NO TARGET"
+    task.wait(1)
+    textlabel_697.Text = "SPAM AP NEAREST"
+end)
+local textbutton_870 = Instance.new("TextButton")
+
+textbutton_870.Size = UDim2.new(1, -54, 0, 36)
+textbutton_870.Position = UDim2.new(0, 0, 0, 160)
+textbutton_870.BackgroundColor3 = Color3.fromRGB(22, 16, 36)
+textbutton_870.Text = ""
+textbutton_870.AutoButtonColor = false
+textbutton_870.ZIndex = 2
+local uicorner_213 = Instance.new("UICorner")
+
+uicorner_213.CornerRadius = UDim.new(0, 12)
+local uistroke_624 = Instance.new("UIStroke")
+
+uistroke_624.Thickness = 1.5
+uistroke_624.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+uistroke_624.Color = Color3.fromRGB(160, 80, 255)
+local uigradient_295 = Instance.new("UIGradient")
+
+uigradient_295.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(160, 80, 255)),
+    ColorSequenceKeypoint.new(0.5, Color3.fromRGB(210, 150, 255)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(160, 80, 255))
+})
+RunService.RenderStepped:Connect(function(arg1, arg2)
+    local calc_1 = (uigradient_295.Rotation + "2")
+    local calc_2 = (calc_1 % 360)
+    uigradient_295.Rotation = calc_2
+end)
+local textlabel_180 = Instance.new("TextLabel")
+
+textlabel_180.Size = UDim2.new(1, 0, 1, 0)
+textlabel_180.BackgroundTransparency = 1
+textlabel_180.Text = "AUTO TP LEFT"
+textlabel_180.TextColor3 = Color3.fromRGB(255, 255, 255)
+textlabel_180.Font = Font.GothamBold
+textlabel_180.TextSize = 13
+textlabel_180.ZIndex = 3
+textbutton_870.MouseEnter:Connect(function(r)
+    local v1 = TweenService:Create(TweenService, {}, TweenInfo.new(0.2, Enum.EasingStyle.Quad), {
+    BackgroundColor3 = Color3.fromRGB(35, 24, 55)
+})
+    local v2 = v1:Play()
+end)
+textbutton_870.MouseLeave:Connect(function(arg1, arg2)
+    local v1 = TweenService:Create(TweenService, {}, TweenInfo.new(0.2, Enum.EasingStyle.Quad), {
+    BackgroundColor3 = Color3.fromRGB(22, 16, 36)
+})
+    local v2 = v1:Play()
+end)
+textbutton_870.MouseButton1Click:Connect(function(r, I, h)
+    local v1 = game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+end)
+local textbutton_99 = Instance.new("TextButton")
+
+textbutton_99.Size = UDim2.new(0, 46, 0, 36)
+textbutton_99.Position = UDim2.new(1, -46, 0, 160)
+textbutton_99.BackgroundColor3 = Color3.fromRGB(30, 18, 52)
+textbutton_99.Text = "NONE"
+textbutton_99.TextColor3 = Color3.fromRGB(180, 140, 255)
+textbutton_99.Font = Font.GothamBold
+textbutton_99.TextSize = 10
+textbutton_99.AutoButtonColor = false
+textbutton_99.ZIndex = 2
+local uicorner_566 = Instance.new("UICorner")
+
+uicorner_566.CornerRadius = UDim.new(0, 12)
+local uistroke_821 = Instance.new("UIStroke")
+
+uistroke_821.Thickness = 1.5
+uistroke_821.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+uistroke_821.Color = Color3.fromRGB(110, 50, 200)
+local uigradient_41 = Instance.new("UIGradient")
+
+uigradient_41.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(110, 50, 200)),
+    ColorSequenceKeypoint.new(0.5, Color3.fromRGB(170, 110, 255)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(110, 50, 200))
+})
+RunService.RenderStepped:Connect(function(arg1, arg2)
+    local calc_1 = (uigradient_41.Rotation + "2")
+    local calc_2 = (calc_1 % 360)
+    uigradient_41.Rotation = calc_2
+end)
+textbutton_99.MouseButton1Click:Connect(function(r, I, h, Q)
+    textbutton_99.Text = "..."
+    textbutton_99.TextColor3 = Color3.fromRGB(255, 220, 80)
+    UserInputService.InputBegan:Connect(function() --[[ No debug info available. ]] end)
+end)
+local textbutton_28 = Instance.new("TextButton")
+
+textbutton_28.Size = UDim2.new(1, -54, 0, 36)
+textbutton_28.Position = UDim2.new(0, 0, 0, 204)
+textbutton_28.BackgroundColor3 = Color3.fromRGB(22, 16, 36)
+textbutton_28.Text = ""
+textbutton_28.AutoButtonColor = false
+textbutton_28.ZIndex = 2
+local uicorner_683 = Instance.new("UICorner")
+
+uicorner_683.CornerRadius = UDim.new(0, 12)
+local uistroke_805 = Instance.new("UIStroke")
+
+uistroke_805.Thickness = 1.5
+uistroke_805.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+uistroke_805.Color = Color3.fromRGB(160, 80, 255)
+local uigradient_935 = Instance.new("UIGradient")
+
+uigradient_935.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(160, 80, 255)),
+    ColorSequenceKeypoint.new(0.5, Color3.fromRGB(210, 150, 255)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(160, 80, 255))
+})
+RunService.RenderStepped:Connect(function(arg1, arg2)
+    local calc_1 = (uigradient_935.Rotation + "2")
+    local calc_2 = (calc_1 % 360)
+    uigradient_935.Rotation = calc_2
+end)
+local textlabel_65 = Instance.new("TextLabel")
+
+textlabel_65.Size = UDim2.new(1, 0, 1, 0)
+textlabel_65.BackgroundTransparency = 1
+textlabel_65.Text = "AUTO TP RIGHT"
+textlabel_65.TextColor3 = Color3.fromRGB(255, 255, 255)
+textlabel_65.Font = Font.GothamBold
+textlabel_65.TextSize = 13
+textlabel_65.ZIndex = 3
+textbutton_28.MouseEnter:Connect(function(r)
+    local v1 = TweenService:Create(TweenService, {}, TweenInfo.new(0.2, Enum.EasingStyle.Quad), {
+    BackgroundColor3 = Color3.fromRGB(35, 24, 55)
+})
+    local v2 = v1:Play()
+end)
+textbutton_28.MouseLeave:Connect(function(arg1, arg2)
+    local v1 = TweenService:Create(TweenService, {}, TweenInfo.new(0.2, Enum.EasingStyle.Quad), {
+    BackgroundColor3 = Color3.fromRGB(22, 16, 36)
+})
+    local v2 = v1:Play()
+end)
+textbutton_28.MouseButton1Click:Connect(function(arg1, arg2)
+    local v1 = game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+end)
+local textbutton_544 = Instance.new("TextButton")
+
+textbutton_544.Size = UDim2.new(0, 46, 0, 36)
+textbutton_544.Position = UDim2.new(1, -46, 0, 204)
+textbutton_544.BackgroundColor3 = Color3.fromRGB(30, 18, 52)
+textbutton_544.Text = "NONE"
+textbutton_544.TextColor3 = Color3.fromRGB(180, 140, 255)
+textbutton_544.Font = Font.GothamBold
+textbutton_544.TextSize = 10
+textbutton_544.AutoButtonColor = false
+textbutton_544.ZIndex = 2
+error("/app/GalacticDumper/dumper/dumper.lua:77: [Galactic]: <To much same operations...>"))
